@@ -6,6 +6,8 @@ FreeBSD is a collection of information. Information what I like to know more abo
 
 The documentation is written with Lyx and the licence is of course the BSD license.
 
+For the moment is this the first version. There are still a lot of mistakes (language errors). But I think it is usable
+
 Contents
 * Installing BSD
 * SSH Certificate Authorities
