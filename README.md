@@ -4,6 +4,8 @@ Installing software is a hard task. Suppose, you want to install a web server. W
 
 FreeBSD is a collection of information. Information what I like to know more about it. The majority of the volume is written for the BSD family, mainly for FreeBSD. 
 
+The documentation is written with Lyx and the licence is of course the BSD license.
+
 Contents
 * Installing BSD
 * SSH Certificate Authorities
