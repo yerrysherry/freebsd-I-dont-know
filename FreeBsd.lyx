@@ -1,0 +1,9245 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.2cm
+\topmargin 2cm
+\rightmargin 1.2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size normal
+FreeBSD, I don't know
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Version 0.1
+\end_layout
+
+\begin_layout Author
+
+\size normal
+By Gerrit Seré
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+
+\size normal
+Who am I and why?
+\end_layout
+
+\begin_layout Standard
+I started my sysadmin unix career in 1998 with the Flemish Government.
+ The operation system we were using was Solaris 2.6.
+ During those days, nearly for each new application we bought a physical
+ server, mostly a Sun Ultra 450 Enterprise.
+ A lot of them had a tape device for doing backups.
+ For monitor those servers and deamons we used Big Brother.
+ In our main department we had a NIS+ system.
+ But most of our time we did basic sysadmin, creating users, installing
+ printer queus, updating DHCP configuration, NFS, restarting deamons, checking
+ logs, rotate them, backup, restore and sent mails to people to please cleaup
+ up their home folders.
+ There was no ticket system, we used only mail and hanging hours at the
+ telephone.
+\end_layout
+
+\begin_layout Standard
+We first used a terminal server.
+ Later a few of my colleguas switched to Linux.
+ I tried using FreeBSD for a few weeks, a lot of time went into compiling,
+ especially KDE took a few hours.
+ FreeBSD was very stable but a few programs were not available, switching
+ me back to Linux.
+\end_layout
+
+\begin_layout Standard
+Nowadays, in 2019, everybody in our team use a laptop.
+ Most of them use Mac Os or Fedora.
+ At the server side everything changed.
+ Physical servers transformed into virtual servers and those servers running
+ in a Cloud environment.
+ Solaris OS changed to Ubuntu and CentOs.
+\end_layout
+
+\begin_layout Standard
+In Apil 2018, I was at very small conference (LOADays) in Belgium and one
+ of those talks, 
+\begin_inset Quotes eld
+\end_inset
+
+FreeBSD is not a Linux distro
+\begin_inset Quotes erd
+\end_inset
+
+ by Kristof Provost, changed my mind.
+ I really appreciated his talk and started looking back to FreeBSD.
+ Some time later, I bought a few books from Michael W Lucas, watch 
+\begin_inset Quotes eld
+\end_inset
+
+BSD Now
+\begin_inset Quotes erd
+\end_inset
+
+ podcasts and reading other BSD documentation from the internet.
+ Now, I have extra fun with the BSD family.
+\end_layout
+
+\begin_layout Standard
+When starting a knew project, like installing a webserver.
+ First we need to collect information by reading, filtering and then transformin
+g the input into a computer-like format: config files, wiki, ....
+ All those steps take a lot of time and effort.
+ Maybe at the end of the story, the setup is not always going into production
+ but it would be pitty to drop it into a trashcan.
+ 
+\end_layout
+
+\begin_layout Standard
+FreeBSD, I don't know:
+\end_layout
+
+\begin_layout Itemize
+I'm not a writer.
+\end_layout
+
+\begin_layout Itemize
+My primary language is not English.
+ I don't know how to write nice sentences.
+\end_layout
+
+\begin_layout Itemize
+In my daily work, I don't use BSD, So, I don't know everything about it.
+\end_layout
+
+\begin_layout Itemize
+Sometimes, I write, 
+\begin_inset Quotes eld
+\end_inset
+
+I don't know
+\begin_inset Quotes erd
+\end_inset
+
+, because I don't find a good or complete answer about the subject.
+\end_layout
+
+\begin_layout Standard
+But:
+\end_layout
+
+\begin_layout Itemize
+I like the way BSD's solve problems.
+\end_layout
+
+\begin_layout Itemize
+It is a bug when the documentation is wrong or incomplete.
+\end_layout
+
+\begin_layout Itemize
+FreeBSD was the my first BSD.
+\end_layout
+
+\begin_layout Itemize
+Welcome readers from other operation systems.
+ Maybe some part of the documentation you could use in your environment.
+\end_layout
+
+\begin_layout Itemize
+Information is constantly changing.
+ It is difficult to keep up constantly ...
+ I try but I don't know ...
+ 
+\end_layout
+
+\begin_layout Itemize
+No read this book top down.
+ Pick the chapters you like.
+ 
+\end_layout
+
+\begin_layout Itemize
+FreeBSD is not owned by a company.
+ So, independence guaranteed.
+\end_layout
+
+\begin_layout Chapter
+
+\size normal
+Installing BSD
+\end_layout
+
+\begin_layout Standard
+If you start a project and need multiple servers, then you should have a
+ virtual environment like VirtualBox.
+ Normally, it is not to difficult to install a BSD operation system.
+ Which one to choose depends on your use case and your personal choose,
+ FreeBSD, OpenBSD, NetBSD, HardenedBSD, ...
+ Here we discuss OpenBSD.
+\end_layout
+
+\begin_layout Standard
+First make a configuration in VirtualBox.
+ The most importent thing is to use 2 network interfaces.
+\end_layout
+
+\begin_layout Itemize
+NAT.
+ With this interface, you communicate with the internet, mostly for downloading
+ packages.
+ You can not communicate with other virtual servers.
+\end_layout
+
+\begin_layout Itemize
+Host-only network.
+ With this interface we can access the different virtual servers in the
+ our sub network and the host (laptop) can communicate with those virtual
+ servers.
+ 
+\end_layout
+
+\begin_layout Standard
+Installing the OS, it just giving the right answer to the questions.
+\end_layout
+
+\begin_layout Itemize
+The user 
+\begin_inset Quotes eld
+\end_inset
+
+captain
+\begin_inset Quotes erd
+\end_inset
+
+ is in the wheel group.
+ With this user you can do 
+\begin_inset Quotes eld
+\end_inset
+
+su -
+\begin_inset Quotes erd
+\end_inset
+
+ to get root.
+\end_layout
+
+\begin_layout Itemize
+All the passwords are the same.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Configuration OpenBSD in Virtualbox
+\end_layout
+
+\begin_layout Standard
+The screenshots show how to configure a virtual server.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_01.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_02.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The screen 
+\begin_inset Quotes eld
+\end_inset
+
+Host Network Manager
+\begin_inset Quotes erd
+\end_inset
+
+ is important.
+ It shows a list of installed network interfaces.
+ These interfaces show up when running 
+\begin_inset Quotes eld
+\end_inset
+
+ifconfig -a
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+ip a
+\begin_inset Quotes erd
+\end_inset
+
+ in your console terminal.
+ There are 2 ways of installing a network interface.
+ DHCP or manual.
+ DHCP is the easiest but for servers we do manual setting.
+ Prefer the option you like.
+ Once a server is setup with DHCP, it will always get the same ip adres.
+ Here we use manual because I want to choose mu ip addresses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_03.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_04.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_05.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_06.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_07.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_08.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_09.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_10.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/virtualbox_11.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Instaling OpenBSD in VirtualBox.
+\end_layout
+
+\begin_layout Standard
+Now, the fun part begins.
+ It is not that difficult to answer the questions.
+ The first interface (em0), which is the NAT interface, we use DHCP.
+ The second network interface (em1), we install when the server is booted.
+ We don't need an X system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_01.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_02.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_03.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Just lazy and install all packages.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_04.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_05.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poweroff the system in VirtualBox.
+ Close the window where we install openbsd and a pop-up box appear.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_06.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Go back to the settings of the virtial server and remove the disk from the
+ virtual server.
+ Otherwise the install proces restarts again.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_07.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_07.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On the NAT interface we do port forwarding.
+ This makes it easy to login for you host server (laptop).
+ This can also be done when the virtual server is running.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_08.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we forward port 2220 to ssh.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_09.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Start de virtual server.
+ A few seconds, you are welcome by a login prompt.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_10.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_openbsd_11.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After the system is installed, check the web page of OpenBSD what to configure
+ next or 
+\begin_inset Quotes eld
+\end_inset
+
+man afterboot
+\begin_inset Quotes erd
+\end_inset
+
+ or https://blog.aktsbot.in/openbsd-getting-started.html.
+ But first we need to configure the second interface.
+ Grab an ip adres in the network range you specified in the 
+\begin_inset Quotes eld
+\end_inset
+
+Host Network Manager
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd$ su - 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Password: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# vi /etc/hostname.em1
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+inet 192.168.153.20 255.255.255.0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# sh /etc/netstart
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# ifconfig em1
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+em1: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        lladdr 08:00:27:7a:20:26
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        index 2 priority 0 llprio 3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        media: Ethernet autoselect (1000baseT full-duplex)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        status: active
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        inet 192.168.153.20 netmask 0xffffff00 broadcast 192.168.153.255
+\end_layout
+
+\begin_layout Standard
+Now, you can ping and login from your host (laptop) to the virtual server.
+ Well done!
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+my_laptop$ ping 192.168.153.20
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+PING 192.168.153.20 (192.168.153.20): 56 data bytes
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+64 bytes from 192.168.153.20: icmp_seq=0 ttl=255 time=0.428 ms
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+64 bytes from 192.168.153.20: icmp_seq=1 ttl=255 time=0.450 ms
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+^C
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+--- 192.168.153.20 ping statistics ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+2 packets transmitted, 2 packets received, 0.0% packet loss
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+round-trip min/avg/max/stddev = 0.428/0.439/0.450/0.011 ms
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+my_laptop$ ssh -l captain 192.168.153.20
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+captain@192.168.153.20's password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+X11 forwarding request failed on channel 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Last login: Tue Oct 16 08:39:59 2018 from 192.168.153.1
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+OpenBSD 6.3 (GENERIC) #100: Sat Mar 24 14:17:45 MDT 2018
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Please use the sendbug(1) utility to report bugs in the system.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Before reporting a bug, please try to reproduce it with the latest
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+version of the code.
+  With bug reports, please try to ensure that
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+enough information to reproduce the problem is enclosed, and if a
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+known fix for it exists, include that as well.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd$
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Installing multiple OpenBSD virtual servers
+\end_layout
+
+\begin_layout Standard
+Now, we installed one server but for testing perposes but often we need
+ to install more.
+ You can do the whole procedure again or use a tool like 
+\begin_inset Quotes eld
+\end_inset
+
+packer
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Another way is to clone the virtuel server.
+ In VirtualBox, select the virtual server who you want to clone.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_multiple_openbsd_01.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Click 
+\begin_inset Quotes eld
+\end_inset
+
+Machine -> Clone
+\begin_inset Quotes erd
+\end_inset
+
+ and then enter the new hostname.
+ Check also 
+\begin_inset Quotes eld
+\end_inset
+
+Reinitialize the MAC address of all network cards
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_multiple_openbsd_02.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And select 
+\begin_inset Quotes eld
+\end_inset
+
+Full clone
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-png/install_multiple_openbsd_03.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because this is a clone, we need to change a few things.
+ Change the port forwarding settings of the NAT Network Adopter to an other
+ number.
+ Click on 
+\begin_inset Quotes eld
+\end_inset
+
+Network -> Adaptor 1 -> Advanced -> Port Forwarding
+\begin_inset Quotes erd
+\end_inset
+
+ (ex 2221).
+ Start the virtual server.
+ Now, we need to change some things on the virtual server.
+ Login to this server from a terminal and change:
+\end_layout
+
+\begin_layout Itemize
+the hostname
+\end_layout
+
+\begin_layout Itemize
+the em1 network interface
+\end_layout
+
+\begin_layout Itemize
+regenerate ssh keys
+\end_layout
+
+\begin_layout Standard
+At the console it looks like:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+$ ssh -l captain -p 2221 localhost
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+captain@localhost's password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd$ su -
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd#
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# vi /etc/myname
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# vi /etc/hostname.em1
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# cd /etc/ssh; rm ssh_host*
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# ssh-keygen -A
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd# sh /etc/netstart
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+em0: bound to 10.0.2.15 from 10.0.2.2 (52:54:00:12:35:02)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+openbsd1# 
+\end_layout
+
+\begin_layout Chapter
+
+\size normal
+SSH Certificate Authorities (CA)
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Introdcution
+\end_layout
+
+\begin_layout Standard
+There was a very interesting blog written by Marlon Dutrafrom from Facebook
+ about how they scale and secure access with SSH.
+ Nowadays everybody use SSH to login into servers.
+ But Facebook and propably other companies, use a CA SSH to authenticate
+ hosts and users.
+ Some reasons are:
+\end_layout
+
+\begin_layout Itemize
+They have a lot of servers and want to registrate who can log in.
+\end_layout
+
+\begin_layout Itemize
+No dependencies like LDAP.
+ If there are problems with LDAP, they still can login.
+\end_layout
+
+\begin_layout Standard
+Setup the multiple OpenBSD servers for our test environment:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Server name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Port forwarding
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ip adres (/ec/hostname.em1)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mylaptop
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simulating the user laptop
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+192.168.153.50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sshca
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simulating the Certificate Authority server.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2501
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+192.168.153.51
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+postgresql
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simulating a database server
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2502
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+192.168.153.52
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Enter folowing lines in /etc/hosts:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+192.168.153.50 mylaptop.yerrysherry.be mylaptop
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+192.168.153.51 sshca.yerrysherry.be sshca
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+192.168.153.52 postgresql.yerrysherry.be postgresql
+\end_layout
+
+\begin_layout Standard
+When everyhing is configured, power down the 3 virtual servers and make
+ a snapshot for each of them.
+ Select a virtual server in VirtualBox, click on 
+\begin_inset Quotes eld
+\end_inset
+
+Machine Tools
+\begin_inset Quotes erd
+\end_inset
+
+ -> 
+\begin_inset Quotes eld
+\end_inset
+
+Snapshots
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Click on the 
+\begin_inset Quotes eld
+\end_inset
+
+take +
+\begin_inset Quotes erd
+\end_inset
+
+ icon and name your snapshot.
+ When we have problems you can restore from a snapshot.
+ Very important is that your clock is acurate!! Do not let it drift, especialy
+ in virtual environments like VirtualBox.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Standard way to login into server
+\end_layout
+
+\begin_layout Standard
+Create a user 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ on the virtual server 
+\begin_inset Quotes eld
+\end_inset
+
+mylaptop
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# useradd -m john
+\end_layout
+
+\begin_layout Standard
+Change the password on the server 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+John, a new member of the database team, wants to start quicly in his new
+ role.
+ The sysadmin administrator gives him the new coordinates for logging into
+ his environment.
+\end_layout
+
+\begin_layout Standard
+Add folowing line to all 
+\begin_inset Quotes eld
+\end_inset
+
+.profile
+\begin_inset Quotes erd
+\end_inset
+
+ file when creating users.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+PS1="
+\backslash
+h-
+\backslash
+u:
+\backslash
+$PWD$ "
+\end_layout
+
+\begin_layout Standard
+or
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+echo 'PS1="
+\backslash
+h-
+\backslash
+u:
+\backslash
+$PWD$ "' >> .profile
+\end_layout
+
+\begin_layout Standard
+Now, we activate the prompt by logging out and in again:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+.
+ ./.profile
+\end_layout
+
+\begin_layout Standard
+In our prompt we have the server name, user name and the folder path.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+With a password
+\end_layout
+
+\begin_layout Standard
+John starts a new session:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+The authenticity of host 'postgresql.yerrysherry.be (192.168.153.52)' can't be
+ established.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ECDSA key fingerprint is SHA256:55gcD2Di21oivq6qG20dL0SGxLiGMjYjeuLw8iC2H0o.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Are you sure you want to continue connecting (yes/no)? yes
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Warning: Permanently added 'postgresql.yerrysherry.be,192.168.153.52' (ECDSA)
+ to the list of known hosts.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john@postgresql.yerrysherry.be's password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Last login: Mon Nov 19 09:28:10 2018 from 192.168.153.50
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+OpenBSD 6.3 (GENERIC) #100: Sat Mar 24 14:17:45 MDT 2018
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Please use the sendbug(1) utility to report bugs in the system.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Before reporting a bug, please try to reproduce it with the latest
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+version of the code.
+ With bug reports, please try to ensure that
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+enough information to reproduce the problem is enclosed, and if a
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+known fix for it exists, include that as well.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-john:/home/john$
+\end_layout
+
+\begin_layout Standard
+He is happy that he can do some stuff.
+ Now, he opens a lot of sessions with the following command.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh 192.168.153.52
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john@192.168.153.52's password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Last login: Mon Nov 19 09:31:37 2018 from 192.168.153.50
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+....
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-john:/home/john$
+\end_layout
+
+\begin_layout Standard
+This is not the best way to login into a server.
+ When this server is connected to the internet, we see a lot of entries
+ in our log files.
+ People, bots, ..
+ are trying to guess standard user accounts and easy passwords to get in.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+Private and public key 
+\end_layout
+
+\begin_layout Standard
+Hmm, John thinks, why should I always enter my password.
+ My password is always short and easy to guess and that is not good.
+ A well known solution is creating a private and public key.
+ The private key stays on the laptop and the public key is distributed to
+ other servers.
+ On the laptop, generate the key pair with 
+\begin_inset Quotes eld
+\end_inset
+
+ssh-keygen
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The contents of 
+\begin_inset Quotes eld
+\end_inset
+
+/home/john/.ssh/id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+ is distributed to other servers into the 
+\begin_inset Quotes eld
+\end_inset
+
+authorized_keys
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Most of the time we use the same user id, 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+.
+ It is possible to use an other one like 
+\begin_inset Quotes eld
+\end_inset
+
+captain
+\begin_inset Quotes erd
+\end_inset
+
+.
+ It is possible to copy the public key to root but this is bad practice.
+ Always log into as a user and then use su or sudo to get root.
+\end_layout
+
+\begin_layout Standard
+Enter a passphrase for more security.
+ In this example we hit enter, so no passphrase.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh-keygen
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Generating public/private rsa key pair.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Enter file in which to save the key (/home/john/.ssh/id_rsa):
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Enter passphrase (empty for no passphrase):
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Enter same passphrase again:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Your identification has been saved in /home/john/.ssh/id_rsa.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Your public key has been saved in /home/john/.ssh/id_rsa.pub.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+The key fingerprint is:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+SHA256:KZJaJfY3HXPw4xGtjECAd7n5vcY1Vd+d2N7xQLKADLY john@mylaptop.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+The key's randomart image is:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
++---[RSA 2048]----+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|     .+=.o.
+ ..
+   |
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|    ....* .o..o .|
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|    o.E.
+ +o+==o *|
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|   .
+ =  oo.=++.+=|
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|    + o S....
+ .o+|
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|   o .
+ o ..
+ .
+ o.o|
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|  .
+        .
+ o .
+ |
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|            +    |
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+|           .
+     |
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
++----[SHA256]-----+
+\end_layout
+
+\begin_layout Standard
+One more time logging in with his password on postgresql server and then
+ copy the public key 
+\begin_inset Quotes eld
+\end_inset
+
+id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+ from his laptop account to the account on the postgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ cat /home/john/.ssh/id_rsa.pub ssh-rsa
+\begin_inset Newline newline
+\end_inset
+
+AAAAB3NzaC1yc2EAAAADAQABAAABAQDDgKfVQ7LWF7rLMMK....1236tRX4pAJ1+OYQIHLMvk81GpktdDt
+ john@mylaptop.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-john:/home/john$ echo 
+\begin_inset Quotes eld
+\end_inset
+
+AAAAB3NzaC1yc2EAAAADAQABAAABAQDDgKfVQ7LWF7rLMMK....1236tRX4pAJ1+OYQIHLMvk81GpktdDt
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\backslash
+
+\begin_inset Newline newline
+\end_inset
+
+ >> /home/john/.ssh/authorized_keys
+\end_layout
+
+\begin_layout Standard
+And finally John logs into the postgresql server without a password.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Last login: Mon Nov 19 09:58:56 2018 from 10.0.2.2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-john:/home/john$
+\end_layout
+
+\begin_layout Standard
+Sometimes John needs to be root.
+ Here we have 2 solutions:
+\end_layout
+
+\begin_layout Itemize
+Copy his public key in the 
+\begin_inset Quotes eld
+\end_inset
+
+authorized_keys
+\begin_inset Quotes erd
+\end_inset
+
+ of root.
+ This is very easy but difficult to maintain.
+ We have no clue which people log into the root account.
+\end_layout
+
+\begin_layout Itemize
+Deploy sudo.
+ This is a beter way to control what John can do and we have logs.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Recap John actions
+\end_layout
+
+\begin_layout Standard
+When John makes his first connection to the server postgresql, he quickly
+ enters 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+ without thinking.
+ Most of the time people enter 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+, otherwise they can not log in.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+The authenticity of host 'postgresql.yerrysherry.be (192.168.153.52)' can't be
+ established.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ECDSA key fingerprint is SHA256:55gcD2Di21oivq6qG20dL0SGxLiGMjYjeuLw8iC2H0o.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Are you sure you want to continue connecting (yes/no)? yes
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Warning: Permanently added 'postgresql.yerrysherry.be,192.168.153.52' (ECDSA)
+ to the list of known hosts.
+\end_layout
+
+\begin_layout Standard
+This question only occurs the first time.
+ The client server (mylaptop) and the remote server (postgresql) need to
+ exchange their keys.
+ This means that the client needs the public key of the server.
+ After entering 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+, the public key of the server is stored in 
+\begin_inset Quotes eld
+\end_inset
+
+/home/john/.ssh/known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ The next time john logsin, he is no longer disturbe to answer the question.
+ Client and server truss each other.
+ This process is called host-based authentication.
+\end_layout
+
+\begin_layout Standard
+Most of the time it is fine when working internal and you know your servers.
+ Are you still confident when you log into a server you don't know? How
+ do we know that this server is ok? Maybe DNS is pointing to a bad server?
+ You can call to the sysadmin and ask if this is the right public key.
+ Maybe, the sysadmin refers you to a web page of all his public keys.
+ 
+\end_layout
+
+\begin_layout Standard
+There is an other way of getting all the public keys from a server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh-keyscan postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# postgresql.yerrysherry.be:22 SSH-2.0-OpenSSH_7.7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql.yerrysherry.be ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKm/EjVR8J4TukNvSE
+IdT0hSJ...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# postgresql.yerrysherry.be:22 SSH-2.0-OpenSSH_7.7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql.yerrysherry.be ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAI
+bmlzdHA...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# postgresql.yerrysherry.be:22 SSH-2.0-OpenSSH_7.7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql.yerrysherry.be ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILy+WB8lgIslA/+74tlM
+xTNh9HDEQakFqDx98Z5YNctB
+\end_layout
+
+\begin_layout Standard
+Each time John makes a connection, SSH will check the 
+\begin_inset Quotes eld
+\end_inset
+
+known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ file, looking for the name John entered in the command line and the public
+ key.
+ If the name is not found, an extra line is add to the 
+\begin_inset Quotes eld
+\end_inset
+
+known_host
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ You can put all names in the first field, separated with a comma.
+\end_layout
+
+\begin_layout Standard
+For some reasons the sysadmin of the postgresql server chances the public
+ and private keys.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# rcctl stop sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# cd /etc; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# cp -Rp ssh ssh.old
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# cd ssh; rm ssh_h*
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# ssh-keygen -A
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# rcctl start sshd
+\end_layout
+
+\begin_layout Standard
+The next morning John starts early at work:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+It is also possible that a host key has just been changed.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+The fingerprint for the ECDSA key sent by the remote host is
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+SHA256:tmIwgrnXZXHlixRouCzmFPH3RTDV88RItiz2WPu80Rs.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Please contact your system administrator.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Add correct host key in /home/john/.ssh/known_hosts to get rid of this message.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Offending ECDSA key in /home/john/.ssh/known_hosts:1
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ECDSA host key for postgresql.yerrysherry.be has changed and you have requested
+ strict checking.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Host key verification failed.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$
+\end_layout
+
+\begin_layout Standard
+John receives a nice warning.
+ The sysadmin of the postgresql server changed the public and pricate keys.
+ It's too early to call the system administrator.
+ John deletes the specific line in the 
+\begin_inset Quotes eld
+\end_inset
+
+know_host
+\begin_inset Quotes erd
+\end_inset
+
+ file and continues to work.
+ We talk a lot about host-based authentication, later we talk more about
+ User-based authentication.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Using a CA with SSH
+\end_layout
+
+\begin_layout Standard
+When we have a lot of servers and people like sysadmins, database admins,
+ web admins, ....
+ it is very difficult to maintain.
+ It is impossible to put all our users local in the 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/password
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ That's why for regular users we put them in LDAP, Kerberos or an other
+ system.
+ But because such systems are a single point of failure and we want still
+ to maintain our servers, we can create a few local users and then 
+\begin_inset Quotes eld
+\end_inset
+
+su
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+sudo
+\begin_inset Quotes erd
+\end_inset
+
+ to get root access.
+ Every time, we make a first connection from our laptop to an other server,
+ we need to type 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+ to update the 
+\begin_inset Quotes eld
+\end_inset
+
+known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ If we want to login without a password, we need to distribute our public
+ keys to other servers.
+ Is it possible to get rid off? 
+\end_layout
+
+\begin_layout Standard
+We need a third party which we can trust, an OpenSSH Certificate Authority.
+ When setting up a CA server, we could consider to login as 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ user.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Configuring the Certificate Authority
+\end_layout
+
+\begin_layout Standard
+There is nothing special about a CA server but it needs to be highly protected.
+ There are 2 types of authentication and it is preferable to generate different
+ keys for each type:
+\end_layout
+
+\begin_layout Itemize
+Host authentication
+\end_layout
+
+\begin_layout Itemize
+User authentication
+\end_layout
+
+\begin_layout Standard
+What do we mean about highly protected CA server, some guide lines:
+\end_layout
+
+\begin_layout Itemize
+Only a few people need access to this server.
+\end_layout
+
+\begin_layout Itemize
+Use a bastion server and with trusted network.
+ The CA server is only reachable through a bastion server.
+\end_layout
+
+\begin_layout Itemize
+Better is to allow only outbound connections.
+ The CA server gets the public keys to be signed.
+ The other way is that the clients copy the keys to the CA server.
+ (inbound connections)
+\end_layout
+
+\begin_layout Itemize
+Signing certificates can be done by a local user.
+ There is no reason to do it as root.
+\end_layout
+
+\begin_layout Itemize
+Why not install 2 CA servers.
+ One for signing Host public keys and an other for User public keys.
+\end_layout
+
+\begin_layout Itemize
+A good starting point is setting the expiration date no longer than 1 year
+ in the future.
+ Do not wait a few days before resign the keys.
+ In one year a lot of things could change, news bugs in OpenSsh, better
+ encryption tools, ...
+ that's way we do not set the expiration to long in the future.
+\end_layout
+
+\begin_layout Itemize
+Use a good passphrase when generating keys.
+\end_layout
+
+\begin_layout Itemize
+Use a provision tool like Puppet, Ansible, Chef, ...
+ to automade the whole process.
+ This is really a must when regenerating, revoking keys.
+ In a cloud environment we reinstall most of the time servers instead of
+ updating them.
+\end_layout
+
+\begin_layout Standard
+First install the 
+\begin_inset Quotes eld
+\end_inset
+
+ca
+\begin_inset Quotes erd
+\end_inset
+
+ user on the server 
+\begin_inset Quotes eld
+\end_inset
+
+sshca
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This is the login who will sign the keys.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca# useradd -m ca
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca# su - ca
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca$ echo 'PS1="
+\backslash
+h-
+\backslash
+u:
+\backslash
+$PWD$ "' >> .profile
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca$ .
+ ./.profile
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca$ mkdir host-sshca user-sshca hosts users
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca$ cd host-sshca
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/host-sshca$ ssh-keygen -t rsa -f 2018-12-07-host-sshca-key
+ -C 'CA host key create on 2018-12-07'
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/host-sshca$ cd /home/ca/user-sshca/
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/user-sshca$ ssh-keygen -t rsa -f 2018-12-07-user-sshca-key
+ -C 'CA user key create on 2018-12-07'
+\end_layout
+
+\begin_layout Standard
+First we add the user and update the login prompt, so we have a nicer way
+ who and where we are log into the folder structure.
+ Then, we create 4 folders.
+ We generate keys in the 
+\begin_inset Quotes eld
+\end_inset
+
+host-sshca
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+user-sshca
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Feel free to choose a good passphrase.
+ The date is part of the name of our keys, so we know when the keys are
+ generated and probably we want to change our keys in the future.
+ Those keys we use for signing the different public keys from the hosts
+ and users.
+ For each host and user, a separate folder will be created.
+ In this way we have a nice overview.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Host Certificate Authority 
+\end_layout
+
+\begin_layout Standard
+The host certificate authenticates hosts to users.
+ All our servers host keys are signed with the CA.
+ When a client connects to a server, the user won't be borrowed to trust
+ the key.
+ No need to type 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+ to update the 
+\begin_inset Quotes eld
+\end_inset
+
+know_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ Most of the time the client is our laptop.
+ Let's have an overview of this process.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-ca/host_cert.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+After installing the server, copy the public keys in the folder 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/*pub
+\begin_inset Quotes erd
+\end_inset
+
+ to the CA server for signing.
+ Making a incomming connection to the CA from a lot of servers is not that
+ secure.
+ There are better ways for getting those public keys.
+ OpenSSH has 4 types of public keys.
+ DSA keys are not safe anymore, use RSA or ed25519.
+ The latest is more secure then RSA but older environments may not support
+ them.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ssh_host_dsa_key.pub
+\end_layout
+
+\begin_layout Itemize
+ssh_host_ecdsa_key.pub
+\end_layout
+
+\begin_layout Itemize
+ssh_host_ed25519_key.pub
+\end_layout
+
+\begin_layout Itemize
+ssh_host_rsa_key.pub
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The CA server signs the public hosts keys and send them back to the server.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For each signed host key, a 
+\begin_inset Quotes eld
+\end_inset
+
+HostCertificate
+\begin_inset Quotes erd
+\end_inset
+
+ exits in the file 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Restart the ssh daemon.
+\end_layout
+
+\begin_layout Enumerate
+Get the public host CA key.
+\end_layout
+
+\begin_layout Enumerate
+On the client side (laptop) changes the 'known_host
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ Either globally or for each user.
+ Each line exits of 3 columns
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+@cert-authority
+\end_layout
+
+\begin_layout Itemize
+domainname
+\end_layout
+
+\begin_layout Itemize
+public key from the CA
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Make a ssh connection to the server.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's play with the account 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Get the public keys from the server postgresql.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/hosts$ mkdir postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/hosts$ cd postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/hosts/postgresql.yerrysherry.be$
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  ssh-keyscan -t rsa postgresql.yerrysherry.be | awk '{print $2 " " $3}' >
+ 2018_ssh_host_rsa_key.pub
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For each server we make a folder with it's FQDN and store the public key.
+ The name of the public key starts with the year.
+ Some people regenerates their server hosts multiple times a year.
+ Add the month to the file name.
+ As long as the file name is unique, we are fine.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=2,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Sign the public keys on the sshca server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/hosts/postgresql.yerrysherry.be$ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  ssh-keygen -s /home/ca/host-sshca/2018-12-07-host-sshca-key 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+             -I "postgresql.yerrysherry.be" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+             -n "postgresql.yerrysherry.be,postgresql,192.168.153.52" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+             -V -1w:+52w 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+             -h 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+             /home/ca/hosts/postgresql.yerrysherry.be/2018_ssh_host_rsa_key.pub
+\end_layout
+
+\begin_layout Standard
+-s: Sign the certificate with this private key.
+\end_layout
+
+\begin_layout Standard
+-I: Certificate identity.
+ The "key identifier" is logged by the server.
+ 
+\end_layout
+
+\begin_layout Standard
+-n: Principals.
+ It is a list of hosts we use for logging it.
+ This means:
+\end_layout
+
+\begin_layout Itemize
+ssh postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout Itemize
+ssh postgresql
+\end_layout
+
+\begin_layout Itemize
+ssh 192.168.153.52
+\end_layout
+
+\begin_layout Standard
+-V: How long is this certificate valid in the future.
+ In this case -1 week and +52 weeks.
+ Use 
+\begin_inset Quotes eld
+\end_inset
+
+-V always:forever
+\begin_inset Quotes erd
+\end_inset
+
+ if you have a boss who don't like security.
+\end_layout
+
+\begin_layout Standard
+-h: Only use this option for host authentification.
+\end_layout
+
+\begin_layout Standard
+The output is a file 
+\begin_inset Quotes eld
+\end_inset
+
+2018_ssh_host_rsa_key-cert.pub
+\begin_inset Quotes erd
+\end_inset
+
+.
+ To get more info about this certificate:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/hosts/postgresql.yerrysherry.be$ ssh-keygen -Lf 2018_ssh_host_rs
+a_key-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+2018_ssh_host_rsa_key-cert.pub:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Type: ssh-rsa-cert-v01@openssh.com host certificate
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Public key: RSA-CERT SHA256:mfcs7howNVrUpLo/w0N/aGlEIpHHWDxnKE6770ITS0Y
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Signing CA: RSA SHA256:Frz29Z+WV3zVZH7IfY21T27m0xXx/FulkQm4cRa9k9c
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Key ID: "postgresql.yerrysherry.be"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Serial: 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Valid: from 2018-12-06T23:26:08 to 2019-12-12T23:26:08
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Principals:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                192.168.153.52
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Critical Options: (none)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Extensions: (none)
+\end_layout
+
+\begin_layout Standard
+Copy the certificate key to the server 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+ in the folder 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca
+\begin_inset Quotes erd
+\end_inset
+
+.
+ All CA configuration comes into a separate folder.
+ Of course, we need root access.
+ Open the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file and add the 
+\begin_inset Quotes eld
+\end_inset
+
+HostCertificate
+\begin_inset Quotes erd
+\end_inset
+
+ variable with the absolute path of the certificate key.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=3,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Update the 
+\begin_inset Quotes eld
+\end_inset
+
+HostCertificate
+\begin_inset Quotes erd
+\end_inset
+
+ on the server
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# vi /etc/ssh/sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+HostCertificate /etc/ssh/ca/2018_ssh_host_rsa_key-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout Standard
+You could have multiple 
+\begin_inset Quotes eld
+\end_inset
+
+HostCertificate
+\begin_inset Quotes erd
+\end_inset
+
+ keys, ex:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+HostCertificate /etc/ssh/ca/2018_ssh_host_rsa_key-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+HostCertificate /etc/ssh/ca/2019_ssh_host_rsa_key-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+HostCertificate /etc/ssh/ca/2018_ssh_host_ed25519_key-cert.pub
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=4,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Get the public CA key from the sshca server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca$ cat /home/ca/host-sshca/2018-12-07-host-sshca-key.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJmwBuMVq+oQQRvOpoguO3xQ5HhLXy9G...
+\begin_inset Newline newline
+\end_inset
+
+....f1stwrF1hRqY/ojp3Ku21KsEqZ CA host key create on 2018-12-07
+\end_layout
+
+\begin_layout Standard
+The public key is part of the 
+\begin_inset Quotes eld
+\end_inset
+
+known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=5,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Edit the 
+\begin_inset Quotes eld
+\end_inset
+
+known_host
+\begin_inset Quotes erd
+\end_inset
+
+ file on the laptop.
+\end_layout
+
+\begin_layout Standard
+We have the option doing it globally (
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+) or for each user.
+ First we get rid of the old 
+\begin_inset Quotes eld
+\end_inset
+
+known_host
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ file has multiple fields.
+\end_layout
+
+\begin_layout Itemize
+@cert-authority.
+ We want to use a CA.
+\end_layout
+
+\begin_layout Itemize
+* The domain name this certificate is valid.
+ We could use *.yerrysherry.be but then we can only use postgresql.yerrysherry.be
+ for logging in.
+ That's why we use multiple principals for logging in.
+\end_layout
+
+\begin_layout Itemize
+The public CA key.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john/.ssh$ mv known_hosts known_hosts.old
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john/.ssh$ vi known_hosts
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+@cert-authority * ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJmwBuMVq+oQQRvOpoguO3xQ
+5HhLXy9Gf...
+\begin_inset Newline newline
+\end_inset
+
+...4r6oRwreC0rbDpzzTkvSdHzf1stwrF1hRqY/ojp3Ku21KsEqZ CA host key create on
+ 2018-12-07
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=6,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Make a ssh connection to the server.
+ 
+\end_layout
+
+\begin_layout Standard
+Everything is setup.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh -v postgresql.yerrysherry.be
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: Authenticating to postgresql.yerrysherry.be:22 as 'john'
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: SSH2_MSG_KEXINIT sent
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: SSH2_MSG_KEXINIT received
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: kex: algorithm: curve25519-sha256
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: kex: host key algorithm: ssh-rsa-cert-v01@openssh.com
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit>
+ compression: none
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit>
+ compression: none
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLYdebug1: Server host certificate:
+ 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        ssh-rsa-cert-v01@openssh.com SHA256:mfcs7howNVrUpLo/w0N/aGlEIpHHWDxnKE677
+0ITS0Y, 
+\backslash
+
+\begin_inset Newline newline
+\end_inset
+
+serial 0 ID "postgresql.yerrysherry.be" CA ssh-rsa SHA256:Frz29Z+WV3zVZH7IfY21T27m
+0xXx/FulkQm4cRa9k9c 
+\backslash
+
+\begin_inset Newline newline
+\end_inset
+
+valid from 2018-12-06T23:26:08 to 2019-12-12T23:26:08
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+debug1: Host 'postgresql.yerrysherry.be' is known and matches the RSA-CERT
+ host certificate.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout Section
+
+\size normal
+User Certificate Authority 
+\end_layout
+
+\begin_layout Standard
+The user certificate authenticates users to hosts.
+ All our users keys are signed with the CA.
+ The users are not borrowed putting there public keys in 
+\begin_inset Quotes eld
+\end_inset
+
+autorized_key
+\begin_inset Quotes erd
+\end_inset
+
+ files.
+ This simplifies a lot when there are a lot of users.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figures-ca/user_cert.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Generate a key pair for the user.
+\end_layout
+
+\begin_layout Enumerate
+Send the user public key to the CA server.
+\end_layout
+
+\begin_layout Enumerate
+The CA server signs the user public key.
+ We now have a user certificate key which we send back to the user.
+\end_layout
+
+\begin_layout Enumerate
+Place the user certificate key into the
+\begin_inset Quotes erd
+\end_inset
+
+.ssh
+\begin_inset Quotes erd
+\end_inset
+
+ folder of the user.
+\end_layout
+
+\begin_layout Enumerate
+Get the public CA user key from the server.
+ Update the 
+\begin_inset Quotes eld
+\end_inset
+
+TrustedUserCAKeys
+\begin_inset Quotes erd
+\end_inset
+
+ in the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file, remove the 
+\begin_inset Quotes eld
+\end_inset
+
+authorized_keys
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Restart the ssh daemon.
+\end_layout
+
+\begin_layout Enumerate
+Make a ssh connection to the server.
+ 
+\end_layout
+
+\begin_layout Standard
+Ok, let's try this scenario with the user 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Generate a key pair for the user.
+\end_layout
+
+\begin_layout Standard
+User 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ already creates a private and public key, otherwise 
+\begin_inset Quotes eld
+\end_inset
+
+ssh-keygen -t rsa
+\begin_inset Quotes erd
+\end_inset
+
+ creates a new one.
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+mylaptop-john:/home/john/.ssh$ ls -l
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+total 16
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+-rw-------  1 john  john  1679 Nov 19 10:54 id_rsa
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+-rw-r--r--  1 john  john   410 Nov 19 10:54 id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+-rw-r--r--  1 john  john   400 Dec 12 23:21 known_hosts
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+-rw-r--r--  1 john  john   374 Nov 19 09:35 known_hosts.old
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+mylaptop-john:/home/john/.ssh$ cat  id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDgKfVQ7LWF7r....
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=2,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Send the user public key to the CA server.
+\end_layout
+
+\begin_layout Standard
+Like hosts, we put all the users in a separete folder on the CA server.
+ Try to make all your users unique.
+ Here, we copy & paste the file.
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+sshca-ca:/home/ca$ cd users
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+sshca-ca:/home/ca/users$ mkdir john
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+sshca-ca:/home/ca/users$ cd john
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+sshca-ca:/home/ca/users/john$
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+sshca-ca:/home/ca/users/john$ vi 2018_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDgKfVQ7LWF7r....
+\end_layout
+
+\begin_layout Standard
+We save his public key with the year in front.
+ Add the month in the filename for a better description.
+ It is a good idea to save all the public keys of the user.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=3,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Sign the user public key on the CA server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+ssh-keygen -s /home/ca/user-sshca/2018-12-07-user-sshca-key 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+           -I "john" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+           -n "john" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+           -V -1w:+52w 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+           /home/ca/users/john/2018_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+Signed user key /home/ca/users/john/2018_id_rsa-cert.pub: id "john" serial
+ 0 for john valid from 2018-12-08T02:53:33 to 2019-12-14T02:53:33
+\end_layout
+
+\begin_layout Standard
+Signing the key is nearly the same as signing the host key.
+ We don't need the 
+\begin_inset Quotes eld
+\end_inset
+
+-h
+\begin_inset Quotes erd
+\end_inset
+
+ flag because this is only for signing host keys.
+ We change the principal flag 
+\begin_inset Quotes eld
+\end_inset
+
+-n
+\begin_inset Quotes erd
+\end_inset
+
+ with the users login name.
+ Then we send the user cerficicate key back to the user.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=4,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+Place the user certificate key into the
+\begin_inset Quotes erd
+\end_inset
+
+.ssh
+\begin_inset Quotes erd
+\end_inset
+
+ folder of the user.
+\end_layout
+
+\begin_layout Standard
+Here we just open the file with vi and paste the user public certificate
+ key.
+ The name of the file must be 
+\begin_inset Quotes eld
+\end_inset
+
+id_rsa-cert.pub
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Let's see more information about the certificate.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+mylaptop-john:/home/john/.ssh$ vi id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+sh-rsa-cert-v01@openssh.com AAAAHHNzaC1yc2EtY2V...
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+mylaptop-john:/home/john/.ssh$ ssh-keygen -Lf ./id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+id_rsa-cert.pub:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Type: ssh-rsa-cert-v01@openssh.com user certificate
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Public key: RSA-CERT SHA256:KZJaJfY3HXPw4xGtjECAd7n5vcY1Vd+d2N7xQLKADLY
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Signing CA: RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfedadAr9DpQ9Lw
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Key ID: "john"
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Serial: 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Valid: from 2018-12-08T02:53:33 to 2019-12-14T02:53:33
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Principals:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+                john
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Critical Options: (none)
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+        Extensions:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+                permit-X11-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+                permit-agent-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+                permit-port-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+                permit-pty
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+                permit-user-rc
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+postgresql-john:/home/john/.ssh$ mv c authorized_keys.old
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=5,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+ Get the public CA user key from the server.
+\end_layout
+
+\begin_layout Standard
+First, get the user public CA key from the CA server and store it in the
+ folder 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca/
+\begin_inset Quotes erd
+\end_inset
+
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+2018-12-07-user-sshca-key.pub
+\begin_inset Quotes erd
+\end_inset
+
+ files.
+ Do it as the 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ user.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/user-sshca$ cat 2018-12-07-user-sshca-key.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIu7...
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca$ vi 2018-12-07-user-sshca-key.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIu7...
+\end_layout
+
+\begin_layout Standard
+Then update the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ SSH needs to know that we use a user certificate.
+ Add the path to the 
+\begin_inset Quotes eld
+\end_inset
+
+TrustedUserCAKeys
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Don't forget to restart ssh.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# vi sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+TrustedUserCAKeys /etc/ssh/ca/2018-12-07-user-sshca-key.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout Standard
+We don't use the 
+\begin_inset Quotes eld
+\end_inset
+
+authorized_keys
+\begin_inset Quotes erd
+\end_inset
+
+ file anymore.
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\size footnotesize
+postgresql-john:/home/john/.ssh$ mv authorized_keys authorized_keys.old
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+start=6,leftmargin=0.5cm
+\end_layout
+
+\end_inset
+
+ Ssh to our server
+\end_layout
+
+\begin_layout Standard
+Now, the only thing to do is to log into the postgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Last login: Sun Dec 16 11:26:12 2018 from 192.168.153.50
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+OpenBSD 6.3 (GENERIC) #100: Sat Mar 24 14:17:45 MDT 2018
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Please use the sendbug(1) utility to report bugs in the system.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Before reporting a bug, please try to reproduce it with the latest
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+version of the code.
+  With bug reports, please try to ensure that
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+enough information to reproduce the problem is enclosed, and if a
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+known fix for it exists, include that as well.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-john:/home/john$
+\end_layout
+
+\begin_layout Standard
+In the 
+\begin_inset Quotes eld
+\end_inset
+
+authlog
+\begin_inset Quotes erd
+\end_inset
+
+, we see how users connect and disconnect.
+\end_layout
+
+\begin_layout Quotation
+
+\size footnotesize
+postgresql-root:/root# tail -f /var/log/authlog 
+\end_layout
+
+\begin_layout Quotation
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout Quotation
+
+\size footnotesize
+Dec 17 03:53:47 postgresql sshd[86645]: Accepted publickey for john from
+ 192.168.153.50 port 38440 ssh2: RSA-CERT ID
+\backslash
+john (serial 0) CA RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfedadAr9DpQ9Lw
+\end_layout
+
+\begin_layout Quotation
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout Quotation
+
+\size footnotesize
+Dec 17 03:57:29 Postgresql Sshd[31896]: Received Disconnect From 192.168.153.50
+ Port 38440:11: Disconnected By User
+\end_layout
+
+\begin_layout Quotation
+
+\size footnotesize
+Dec 17 03:57:29 Postgresql Sshd[31896]: Disconnected From User John 192.168.153.50
+ Port 38440
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Logging is as root
+\end_layout
+
+\begin_layout Standard
+A general rule is not logging straight into the 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ account.
+ Always log in as a user and then use 
+\begin_inset Quotes eld
+\end_inset
+
+su
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+sudo
+\begin_inset Quotes erd
+\end_inset
+
+ to get root access.
+ A mistake in the configuration file of 
+\begin_inset Quotes eld
+\end_inset
+
+sudo
+\begin_inset Quotes erd
+\end_inset
+
+ (/etc/sudoers), is hard to fix when rolled out to many servers.
+ 
+\end_layout
+
+\begin_layout Standard
+When using a CA, it is ok for logging in as root.
+ We need to do a few configuration steps for logging in as 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Those steps are done in a control way.
+ Let's see a few ways how this could be done.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+With principals
+\end_layout
+
+\begin_layout Standard
+A senior sysadmin 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ needs access to the 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+ server as user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and sometimes as 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Configuration on her laptop.
+ Feel free to give her a password or passphrase.
+ Don't forget to update her 
+\begin_inset Quotes eld
+\end_inset
+
+known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ file with the host certificate file.
+ Otherwhise, we need to type 
+\begin_inset Quotes eld
+\end_inset
+
+y
+\begin_inset Quotes erd
+\end_inset
+
+ for accepting the fingerprint.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop# useradd -m ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop# su - ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop$ ssh-keygen -t rsa
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop$ cat /home/ann/.ssh/id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDqz3PlmS8d13ePGeEgF95zx+6pAf....
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+vi /home/ann/.ssh/known_hosts
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+@cert-authority * ssh-rsa AAAAB3NzaC1yc2EAAAA....
+\end_layout
+
+\begin_layout Standard
+Configuration on the CA server.
+ Copy 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ public key (
+\begin_inset Quotes eld
+\end_inset
+
+/home/ann/.ssh/id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+) to 
+\begin_inset Quotes eld
+\end_inset
+
+2019_id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+, signs the key with 
+\begin_inset Quotes eld
+\end_inset
+
+ssh-keygen
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We now have a certificate user key, check it.
+ We see that there are 2 principals 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users$ mkdir ann; cd ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ vi 2019_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDqz3PlmS8d13ePGeEgF95zx+6pAf....
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-keygen -s /home/ca/user-sshca/2018-12-07-user-sshca-key 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -I "ann" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -n "ann,root" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -V -1w:+52w 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           /home/ca/users/ann/2019_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDqz3PlmS8d13ePGeEgF95zx+6pAf....
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Signed user key /home/ca/users/ann/2019_id_rsa-cert.pub: 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+     id "ann" serial 0 for ann,root valid from 2018-12-10T18:19:22 to 2019-12-16
+T18:19:22
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ ssh-keygen -Lf ./2019_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+./2019_id_rsa-cert.pub:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Type: ssh-rsa-cert-v01@openssh.com user certificate
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Public key: RSA-CERT SHA256:sikW0Xz8sRhKoz1c3K/HGCxHkkw42+SEhGm9pzav5u8
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Signing CA: RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfedadAr9DpQ9Lw
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Key ID: "ann"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Serial: 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Valid: from 2018-12-10T18:19:22 to 2019-12-16T18:19:22
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Principals:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                root
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Critical Options: (none)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Extensions:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-X11-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-agent-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-port-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-pty
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-user-rc
+\end_layout
+
+\begin_layout Standard
+Now, we send back the certificate user key to the laptop of 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and store it in het 
+\begin_inset Quotes eld
+\end_inset
+
+.ssh
+\begin_inset Quotes erd
+\end_inset
+
+ folder.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ cat 2019_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa-cert-v01@openssh.com AAAAHHNzaC1yc2EtY2VydC12...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop$ vi /home/ann/.ssh/id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa-cert-v01@openssh.com AAAAHHNzaC1yc2EtY2VydC12...
+\end_layout
+
+\begin_layout Standard
+Now, the final configuration on the server 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Of course 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ needs an account on this server and most importent people need to have
+ the possibility to login as root.
+ OpenBsd is very strict when logging in as root, it prohibits it completely.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# useradd -m ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# vi /etc/ssh/sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#PermitRootLogin no
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+PermitRootLogin prohibit-password
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout Standard
+If everythings is done correctly, 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ can login into the postgresql server from her laptop.
+ Let's check the log file on the posrtgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# tail -f /var/log/authlog
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Jan 18 09:48:52 postgresql sshd[93212]: Accepted publickey for ann from
+ 192.168.153.50 port 39429 ssh2: 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+RSA-CERT ID ann (serial 0) CA RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfedadAr9Dp
+Q9Lw
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Jan 18 09:49:37 postgresql sshd[23237]: Accepted publickey for root from
+ 192.168.153.50 port 48908 ssh2:
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+RSA-CERT ID ann (serial 0) CA RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfedadAr9Dp
+Q9Lw
+\end_layout
+
+\begin_layout Standard
+Very nice, first we see that 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ logins with her account and a little bit latter she logins as 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+With AuthorizedPrincipalsFile
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:With-AuthorizedPrincipalsFile"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the last section, we add users to the principal argument in the user
+ certificate.
+ This is ok when we have a few users who need to login as a specific user.
+ But it gets very quick cumbersome and it don't scale very well.
+ Everytime a user needs to login as an other user, we need to change the
+ user certificate.
+ A better solution is to use the 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedPrincipalsFile
+\begin_inset Quotes erd
+\end_inset
+
+ sshd option.
+ We can do it globaly or on user base.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's suspose that the user 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ needs root access on the PostgreSql server.
+ First we need to change the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ Add or change the option 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedPrincipalsFile
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Then we specify a folder name with contains 
+\begin_inset Quotes eld
+\end_inset
+
+%u
+\begin_inset Quotes erd
+\end_inset
+
+, like 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca/%u_auth_principals
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+%u
+\begin_inset Quotes erd
+\end_inset
+
+ will be substitude with the login name of the user, in our case 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+.
+ After changing the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file, restart the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd
+\begin_inset Quotes erd
+\end_inset
+
+ deamon.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/# vi sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+AuthorizedPrincipalsFile /etc/ssh/ca/%u_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok
+\end_layout
+
+\begin_layout Standard
+For each user who needs 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ access, we enter a new line with a principal from the user certificate.
+ In this case 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi root_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john
+\end_layout
+
+\begin_layout Standard
+Test if user 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ can login as root on the postgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh -l root postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh#
+\end_layout
+
+\begin_layout Standard
+Now let's see if 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ still can login with his username.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+no such identity: /home/john/.ssh/id_xmss: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john@postgresql's password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# tail -f  /var/log/authlog
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Jan 31 01:20:19 postgresql sshd[8155]: error: Certificate does not contain
+ an authorized principal
+\end_layout
+
+\begin_layout Standard
+Hmmm, this is not the case, a password prompt appears.
+ The reason is that we use the 
+\begin_inset Quotes eld
+\end_inset
+
+authorizedPrincipalsFile
+\begin_inset Quotes erd
+\end_inset
+
+ option.
+ The solution is to make a new file with the principal for 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ on the postgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi john_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-john:/home/john$
+\end_layout
+
+\begin_layout Standard
+Because we are using the 
+\begin_inset Quotes eld
+\end_inset
+
+authorizedPrincipalsFile
+\begin_inset Quotes erd
+\end_inset
+
+ option, the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ has the same problem.
+ She can not login.
+ We need to make auth_principals files for the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ as we did for the user 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+All the auth_principals files are centralized in the folder 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca
+\begin_inset Quotes erd
+\end_inset
+
+ but as said before we can also put the file into the users home folder.
+ Change the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file on the postgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# vi sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile /etc/ssh/ca/%u_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+AuthorizedPrincipalsFile .ssh/auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout Standard
+Now put the principals in the 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals
+\begin_inset Quotes erd
+\end_inset
+
+ file in the .ssh of the user home folder.
+ Now, user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ are happy and login as 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ on the postgreql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root/.ssh# vi auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john
+\end_layout
+
+\begin_layout Standard
+Using this method is a flexibele way for giving 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ access or logging is as an other user.
+ We don't need to change the user certificate.
+ We only add each user on a separate line in the principal file.
+ We do it globally or in the user home folder.
+ There is no best way but I prefer doing it more globally because this gives
+ a centralized overview.
+ Most of the time this method is sufficient for rolling out man cases.
+ 
+\end_layout
+
+\begin_layout Standard
+We can extend this approch by using groups when making user certificates.
+\end_layout
+
+\begin_layout Standard
+Suspose we have many sysadmins working on many different kind of mailservers.
+\end_layout
+
+\begin_layout Standard
+exim
+\end_layout
+
+\begin_layout Standard
+postfix
+\end_layout
+
+\begin_layout Standard
+sendmail
+\end_layout
+
+\begin_layout Standard
+qmail
+\end_layout
+
+\begin_layout Section
+
+\size normal
+With AuthorizedPrincipalsCommand
+\end_layout
+
+\begin_layout Standard
+With the 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedPrincipalsFile
+\begin_inset Quotes erd
+\end_inset
+
+ we create a static file.
+ The same can be done in a dynamic way by using the 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedPrincipalsCommand
+\begin_inset Quotes erd
+\end_inset
+
+ option.
+ This option needs a program to run.
+ This program must have an absolute path and only has user 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ permissions, no group or other permissions.
+ (chmod 700 file.sh).The output of the program must be the same as we create
+ with the 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedPrincipalsFile
+\begin_inset Quotes erd
+\end_inset
+
+, a list of allowed certificate principals.This gives us a lot of possibilities.
+ In the program, we can do ldap lookups, searching in a database, ....
+ but be carefull when using external resources.
+ Doing this creates dependenties.
+ Good luck when the LDAP server is down.
+ We also need to specify 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedPrincipalsCommandUser
+\begin_inset Quotes erd
+\end_inset
+
+, otherwise ssh won't start.
+ The documentation arguments to use an user other then 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ for execution the program but this doesn't work for my.
+ We can specify arguments to use in the program.
+ (man sshd_config)
+\end_layout
+
+\begin_layout Itemize
+%% A literal `%'.
+\end_layout
+
+\begin_layout Itemize
+%D The routing domain in which the incoming connection was received.
+\end_layout
+
+\begin_layout Itemize
+%F The fingerprint of the CA key.
+\end_layout
+
+\begin_layout Itemize
+%f The fingerprint of the key or certificate.
+\end_layout
+
+\begin_layout Itemize
+%h The home directory of the user.
+\end_layout
+
+\begin_layout Itemize
+%i The key ID in the certificate.
+\end_layout
+
+\begin_layout Itemize
+%K The base64-encoded CA key.
+\end_layout
+
+\begin_layout Itemize
+%k The base64-encoded key or certificate for authentication.
+\end_layout
+
+\begin_layout Itemize
+%s The serial number of the certificate.
+\end_layout
+
+\begin_layout Itemize
+%T The type of the CA key.
+\end_layout
+
+\begin_layout Itemize
+%t The key or certificate type.
+\end_layout
+
+\begin_layout Itemize
+%u The username.
+\end_layout
+
+\begin_layout Standard
+AuthorizedPrincipalsCommand accepts following tokens %%, %F, %f, %h, %i,
+ %K, %k, %s, %T, %t, and %u.
+ The most importance is 
+\begin_inset Quotes eld
+\end_inset
+
+%u
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Whenever we change something in the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ or in the program, we need to restart the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd
+\begin_inset Quotes erd
+\end_inset
+
+ deamon.
+ Let's see how we implement this for our user 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We create an ACL list file.
+ When logging is as user 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+, only the user certificates with the principals 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ can login.
+ If we don't find the user in the ACL file, means that the user is logging
+ in as her/his user name.
+ In that case we send the user name.
+ Otherwise we must update our 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals.acl
+\begin_inset Quotes erd
+\end_inset
+
+ for each user who wants to login as her/his own account.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+user
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+principal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+root
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ann
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+root
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+john
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On the postgresql server it looks like this:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi auth_principals.acl
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#user      principal
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+root       ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+root       john
+\end_layout
+
+\begin_layout Standard
+Change the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ on the 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+ server.
+ When somebody ssh to the server, the sshd executes the program 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca/auth_principals.sh
+\begin_inset Quotes erd
+\end_inset
+
+ with the arguments 
+\begin_inset Quotes eld
+\end_inset
+
+%u
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+%i
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+%h
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+%i
+\begin_inset Quotes erd
+\end_inset
+
+ is what we see in the logging.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# vi sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile /etc/ssh/ca/%u_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile .ssh/auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+AuthorizedPrincipalsCommand /etc/ssh/ca/auth_principals.sh %u %h %i
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+AuthorizedPrincipalsCommandUser root
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principlas.sh
+\begin_inset Quotes erd
+\end_inset
+
+ accepts 3 parameters but we use only the first one, the user login name.
+ The shell scripts excecutes a little awk script.
+ It gets its input from 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals.acl
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Lines starting with a 
+\begin_inset Quotes eld
+\end_inset
+
+#
+\begin_inset Quotes erd
+\end_inset
+
+ will be skipped.
+ Then it checks the login user name with the first field in the 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals.acl
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ If they match then the second field, the principal, will be written to
+ the standard output.
+ In the end, if nothing is written, then we write down the principal of
+ the user name.
+ Set the rights permissions on the 
+\begin_inset Quotes eld
+\end_inset
+
+auth_*
+\begin_inset Quotes erd
+\end_inset
+
+ files and restart the sshd deamon.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi auth_principals.sh
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#!/bin/ksh
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# we get 3 parameters
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# %u = username we login
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# %h = home folder of the user
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# %i = key ID of the user certificate
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+file="/etc/ssh/ca/auth_principals.acl"
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+/usr/bin/awk -v user=$1 '
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+BEGIN {count=0}
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+/#/ {next}
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+$1 ~ user {print $2; count=1}
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+END { if (count==0) {print user}}
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+' $file
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# ls -l auth*
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+-rw-r--r--  1 root  wheel   39 Jan 31 09:02 auth_principals.acl
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+-rwx------  1 root  wheel  297 Jan 31 07:22 auth_principals.sh
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout Standard
+Check if 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ can login as 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ and check the log file on the postgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh -l root postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root#
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# tail -f /var/log/authlog
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Jan 31 09:20:34 postgresql sshd[951]: Accepted publickey for root from 192.168.153.
+50 port 42237 
+\backslash
+
+\begin_inset Newline newline
+\end_inset
+
+ ssh2: RSA-CERT ID john (serial 0) CA RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfe
+dadAr9DpQ9Lw
+\end_layout
+
+\begin_layout Standard
+The shell script can be extended, a few ideas:
+\end_layout
+
+\begin_layout Itemize
+write information to a log file.
+ I have no clue but the log statements show duplicated in the log file.
+\end_layout
+
+\begin_layout Itemize
+add a third column 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+ in the 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals.acl
+\begin_inset Quotes erd
+\end_inset
+
+ file if the user can authentictated.
+ This is a fast method for revoking a user.
+\end_layout
+
+\begin_layout Itemize
+add more options to the 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals.acl
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Fine tuning privileges
+\end_layout
+
+\begin_layout Standard
+In all the examples, the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ have all the privileges when logging in.
+ In most cases it's ok.
+ But sometimes we want fine tune those privileges.
+ In fact in all above cases, without knowing, we were creating an 
+\begin_inset Quotes eld
+\end_inset
+
+authorized_keys
+\begin_inset Quotes erd
+\end_inset
+
+ file format.
+ For a complete reference take a look at the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd
+\begin_inset Quotes erd
+\end_inset
+
+ man page, section 
+\begin_inset Quotes eld
+\end_inset
+
+AUTHORIZED_KEYS FILE FORMAT
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Let's make a 
+\begin_inset Quotes eld
+\end_inset
+
+postgres
+\begin_inset Quotes erd
+\end_inset
+
+ user on the postgresql server and a new user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+ on the laptop.
+ On the 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+ server we need to run a special script 
+\begin_inset Quotes eld
+\end_inset
+
+salary.sh
+\begin_inset Quotes erd
+\end_inset
+
+ and only user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+ can run it with ssh.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# useradd -m postgres
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql$ vi salary.sh
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+cat <<EOF
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+boss 7645
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann 4500
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john 2877
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+EOF
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql$ chmod +x salary.sh
+\end_layout
+
+\begin_layout Standard
+On our laptop:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop# useradd -m accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop# su - accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop# vi .profile
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+PS1="
+\backslash
+h-
+\backslash
+u:
+\backslash
+$PWD$ "
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop# exit
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop# su - accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$ ssh-keygen -t rsa
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant/.ssh$ cat id_rsa.pub
+\end_layout
+
+\begin_layout Standard
+On the sshca server.
+
+\size footnotesize
+ Copy the 
+\begin_inset Quotes erd
+\end_inset
+
+mylaptop-accountant:/home/accountant/.ssh/id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+sshca-ca:/home/ca/users/accountant/id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users$ mkdir accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users$ cd accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/accountant$ vi 2019_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+(copy mylaptop-accountant:/home/accountant/.ssh$ cat id_rsa.pub)
+\end_layout
+
+\begin_layout Standard
+On the postgresql server disable following config parameters and restart
+ de ssh daemon.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# cat sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+HostCertificate /etc/ssh/ca/2018_ssh_host_rsa_key-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+TrustedUserCAKeys /etc/ssh/ca/2018-12-07-user-sshca-key.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile /etc/ssh/ca/%u_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile .ssh/auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsCommand /etc/ssh/ca/auth_principals.sh %u %h %i
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsCommandUser root
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+With principals
+\end_layout
+
+\begin_layout Standard
+Create a user certificate for the user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes eld
+\end_inset
+
+.
+ This time executes 
+\begin_inset Quotes eld
+\end_inset
+
+ssh-keygen
+\begin_inset Quotes erd
+\end_inset
+
+ with 
+\begin_inset Quotes eld
+\end_inset
+
+-O
+\begin_inset Quotes erd
+\end_inset
+
+ to set some options.
+ With 
+\begin_inset Quotes eld
+\end_inset
+
+-O clear
+\begin_inset Quotes erd
+\end_inset
+
+, we erase all the options.
+ Then with 
+\begin_inset Quotes eld
+\end_inset
+
+-O force-command
+\begin_inset Quotes erd
+\end_inset
+
+ we add one option, execute the 
+\begin_inset Quotes eld
+\end_inset
+
+salary.sh
+\begin_inset Quotes erd
+\end_inset
+
+ command.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-keygen -s /home/ca/user-sshca/2018-12-07-user-sshca-key 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -I "accountant" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -n "accountant" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -V -1w:+52w 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -O clear 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -O force-command="/home/postgres/salary.sh" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           /home/ca/users/accountant/2019_id_rsa.pub
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+sshca-ca:/home/ca/users/accountant$ ssh-keygen -Lf 2019_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+2019_id_rsa-cert.pub:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Type: ssh-rsa-cert-v01@openssh.com user certificate
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Public key: RSA-CERT SHA256:jx5Z1Vc2buA4zs6MXOuMxSr84TkaQr3gwnQUbln39iM
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Signing CA: RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfedadAr9DpQ9Lw
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Key ID: "accountant"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Serial: 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Valid: from 2019-02-18T08:39:57 to 2020-02-24T08:39:57
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Principals:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Critical Options:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                force-command /home/postgres/salary.sh
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Extensions: (none)
+\end_layout
+
+\begin_layout Standard
+Don't forget to update the
+\begin_inset Quotes eld
+\end_inset
+
+known_hosts
+\begin_inset Quotes erd
+\end_inset
+
+ and/or the 
+\begin_inset Quotes eld
+\end_inset
+
+.profile
+\begin_inset Quotes erd
+\end_inset
+
+ file for the user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Then we make a connection to the postgresql server with the user 
+\begin_inset Quotes eld
+\end_inset
+
+postgres
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$ ssh -l postgres postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+PTY allocation request failed on channel 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+boss 7645
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann 4500
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john 2877
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Connection to postgresql closed.
+\end_layout
+
+\begin_layout Standard
+How about scp? 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$ touch aa
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$ scp aa postgres@postgresql:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+boss 7645
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$
+\end_layout
+
+\begin_layout Standard
+The file 
+\begin_inset Quotes eld
+\end_inset
+
+aa
+\begin_inset Quotes erd
+\end_inset
+
+ won't be copied to the postgresql server.
+ What we get back is the first line of the 
+\begin_inset Quotes eld
+\end_inset
+
+salary.sh
+\begin_inset Quotes erd
+\end_inset
+
+ program.
+ No idea why.
+\end_layout
+
+\begin_layout Standard
+Privileges can be set on different places but if we want to be absolute
+ sure, put it in the certificate.
+ It overrule all other possibilities.
+ This is also the saftest way to give external persons, who work for a short
+ period, some privileges.
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+With AuthorizedPrincipalsFile
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:With-AuthorizedPrincipalsFile"
+
+\end_inset
+
+we use the 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedPrincipalsFile
+\begin_inset Quotes erd
+\end_inset
+
+ option.
+ Let's change 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file, enable this option again.
+ In the 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca/postgres_auth_principals
+\begin_inset Quotes erd
+\end_inset
+
+ file, we specify the principals who have access to the postgres user.
+ There is only one line with the content 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Restart the ssh daemon.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# vi sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+HostCertificate /etc/ssh/ca/2018_ssh_host_rsa_key-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+TrustedUserCAKeys /etc/ssh/ca/2018-12-07-user-sshca-key.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+AuthorizedPrincipalsFile /etc/ssh/ca/%u_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile .ssh/auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsCommand /etc/ssh/ca/auth_principals.sh %u %h %i
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsCommandUser root
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi postgres_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout Standard
+Nothing is changed for the user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$ ssh -l postgres postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+PTY allocation request failed on channel 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+boss 7645
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann 4500
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john 2877
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Connection to postgresql closed.
+\end_layout
+
+\begin_layout Standard
+Let's redo the user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We first need to remake the certificate.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/accountant$ mv 2019_id_rsa-cert.pub 2019_id_rsa-cert.comma
+nd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/accountant$ ssh-keygen -s /home/ca/user-sshca/2018-12-07
+-user-sshca-key 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -I "accountant" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -n "accountant" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -V -1w:+52w 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           /home/ca/users/accountant/2019_id_rsa.pub
+\end_layout
+
+\begin_layout Standard
+And copy the contents from 
+\begin_inset Quotes eld
+\end_inset
+
+sshca:/home/ca/accountant/2019_id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+mylaptop-accountant:/home/accountant/.ssh/id_rsa-cert.pub
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant/.ssh$ mv id_rsa-cert.pub id_rsa-cert.pub.comman
+d
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant/.ssh$ vi id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+....
+\end_layout
+
+\begin_layout Standard
+When somenbody wants to login as user 
+\begin_inset Quotes eld
+\end_inset
+
+postgres
+\begin_inset Quotes erd
+\end_inset
+
+, we check 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca/postgres_auth_principals
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ %u is substitute with 
+\begin_inset Quotes eld
+\end_inset
+
+postgres
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi postgres_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+command="/home/postgres/salary.sh" accountant
+\end_layout
+
+\begin_layout Standard
+Which options can be use in the 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca/postgres_auth_principals
+\begin_inset Quotes erd
+\end_inset
+
+ file? Check the documantion with 
+\begin_inset Quotes eld
+\end_inset
+
+man sshd
+\begin_inset Quotes erd
+\end_inset
+
+ and the section 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedKeysFile
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The documentation is not 100% clear.
+ Most options can be used.
+ Separate the options with a comma, not with a space and the last field
+ is the principal.
+ There is only one principal.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+command="/home/postgres/salary.sh",from="192.168.153.50" accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+command="/home/postgres/salary.sh",no-agent-forwarding,no-port-forwarding,pty,no-
+X11-forwarding accountant
+\end_layout
+
+\begin_layout Standard
+This works but is not 100% correctly.
+ Ssh won't give an error, it looks like the other options after a comma
+ are neglected.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+command="/home/postgres/salary.sh" from="99.99.99.99" accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+command="/home/postgres/salary.sh" action="do_it_slow" accountant
+\end_layout
+
+\begin_layout Standard
+Also the strange output when doing a scp.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$ scp aa postgres@postgresql:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+boss 7645
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+With AuthorizedPrincipalsCommand
+\end_layout
+
+\begin_layout Standard
+Again, we first need to change the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file on the 
+\begin_inset Quotes eld
+\end_inset
+
+postgreslq
+\begin_inset Quotes erd
+\end_inset
+
+ server for enable this option.
+ Restart the daemon.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# vi sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+HostCertificate /etc/ssh/ca/2018_ssh_host_rsa_key-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+TrustedUserCAKeys /etc/ssh/ca/2018-12-07-user-sshca-key.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile /etc/ssh/ca/%u_auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#AuthorizedPrincipalsFile .ssh/auth_principals
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+AuthorizedPrincipalsCommand /etc/ssh/ca/auth_principals.sh %u %h %i
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+AuthorizedPrincipalsCommandUser root
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# rcctl restart sshd
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshd(ok)
+\end_layout
+
+\begin_layout Standard
+We need to change the 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals.acl
+\begin_inset Quotes erd
+\end_inset
+
+ file with a third option.
+ When logging in as user 
+\begin_inset Quotes eld
+\end_inset
+
+postgres
+\begin_inset Quotes erd
+\end_inset
+
+ and the certificate has principal 
+\begin_inset Quotes eld
+\end_inset
+
+accountant', which is the user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+, then only the 
+\begin_inset Quotes eld
+\end_inset
+
+salary.sh
+\begin_inset Quotes erd
+\end_inset
+
+ account can be execute.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi auth_principals.acl
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# user          principal       options
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgres        accountant      command="/home/postgres/salary.sh"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#root           ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+root            john
+\end_layout
+
+\begin_layout Standard
+The only thing to do is to change one line in the 
+\begin_inset Quotes eld
+\end_inset
+
+auth_principals.sh
+\begin_inset Quotes erd
+\end_inset
+
+ script for printing the options.
+ ($1 ~ user {print $3 " " $2; count=1})
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi auth_principals.sh
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+#!/bin/ksh
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# we get 3 parameters
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# %u = username we login
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# %h = home folder of the user
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# %i = key ID of the user certificate
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+file="/etc/ssh/ca/auth_principals.acl"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+/usr/bin/awk -v user=$1 '
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+BEGIN {count=0}
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+/#/ {next}
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+$1 ~ user {print $3 " " $2; count=1}
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+END { if (count==0) {print user}}
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+' $file
+\end_layout
+
+\begin_layout Standard
+That's all and user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+ is happy again.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-accountant:/home/accountant$ ssh -l postgres postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+boss 7645
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann 4500
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john 2877
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Connection to postgresql closed.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Revoking keys
+\end_layout
+
+\begin_layout Standard
+We did a long story, with all kind of possibilities for creating users with
+ principals.
+ But what happen when people leave the organisation, when somebody laptop
+ is stolen or a host server we won't trust anymore.
+ There are multiple ways for revoking users and hosts keys.
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+Revoking Users keys
+\end_layout
+
+\begin_layout Standard
+We only need to change the option 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ in the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ Let's take a close look how this is done for the users keys.
+ On the 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql
+\begin_inset Quotes erd
+\end_inset
+
+ server we have 3 users, 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+.
+ First we prepare the server for revoking users keys and then revoke the
+ key of 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+First, we add the 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ option to the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file and restart the sshd daemon.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# vi sshd_config
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+RevokedKeys /etc/ssh/ca/RevokedKeys
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh# rcctl restart sshd
+\end_layout
+
+\begin_layout Standard
+First check of the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ can still login from her laptop into the postgresql server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-ann:/home/ann$ ssh postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+no such identity: /home/ann/.ssh/id_xmss: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann@postgresql's password:
+\end_layout
+
+\begin_layout Standard
+It is important that the 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ file exits and that it is readable.
+ Otherwise nobody can log in.
+ Just, create the file.
+ No need to restart the daemon.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# > RevokedKeys
+\end_layout
+
+\begin_layout Standard
+Now, we put the public key or the certificate key of the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ is this file.
+ That's why it is important to keep those files on the 
+\begin_inset Quotes eld
+\end_inset
+
+sshca-ca
+\begin_inset Quotes erd
+\end_inset
+
+ server.
+ Check the public keys of user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ on the 
+\begin_inset Quotes eld
+\end_inset
+
+sshca
+\begin_inset Quotes erd
+\end_inset
+
+ server and copy the contents of the 
+\begin_inset Quotes eld
+\end_inset
+
+2019_id_rsa-cert.pub
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+2019_id_rsa.pub
+\begin_inset Quotes erd
+\end_inset
+
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+postgresql-root:/etc/ssh/ca/RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ ls -1
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+2019_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+2019_id_rsa.pub
+\end_layout
+
+\begin_layout Standard
+On the postgresql server.
+ For each user, we add one new line.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# vi RevokedKeys
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-rsa AAAAB3NzaC1yc2EAAAADA...
+\end_layout
+
+\begin_layout Standard
+And now user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ can not login anymore.
+ A password prompt appear.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-ann:/home/ann$ ssh postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+no such identity: /home/ann/.ssh/id_xmss: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann@postgresql's password:
+\end_layout
+
+\begin_layout Standard
+Let's check the log file on the postgreql server
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/root# tail -f /var/log/authlog
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Mar 13 12:59:53 postgresql sshd[42514]: error: Authentication key RSA SHA256:sik..
+ revoked by file /etc/ssh/ca/RevokedKeys
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Mar 13 12:59:53 postgresql sshd[42514]: error: Authentication key RSA-CERT
+ SHA256:si..
+ revoked by file /etc/ssh/ca/RevokedKeys
+\end_layout
+
+\begin_layout Standard
+That is the fingerprint of the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We can check this on the ssh-ca server.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ ssh-keygen -lf ./2019_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+2048 SHA256:sikW0Xz8sRhKoz1c3K/HGCxHkkw4
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ is a text file.
+ This file would become big.
+ It is possible to compact this file and make a binary format, a Key Revocation
+ List (KRL).
+ We generate this file with 
+\begin_inset Quotes eld
+\end_inset
+
+ssh-keygen
+\begin_inset Quotes erd
+\end_inset
+
+ with the 
+\begin_inset Quotes eld
+\end_inset
+
+-k
+\begin_inset Quotes erd
+\end_inset
+
+ option.
+ We make a new folder on the sshca server.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca$ mkdir revoke
+\end_layout
+
+\begin_layout Standard
+There are a few possibilities how we make a KRL file.
+ Check the man page of 
+\begin_inset Quotes eld
+\end_inset
+
+ssh-keygen
+\begin_inset Quotes erd
+\end_inset
+
+ in the section 
+\begin_inset Quotes eld
+\end_inset
+
+KEY REVOCATION LISTS
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The basic command is:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number] file ...
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 000000000000000000000
+\noindent
+
+\size footnotesize
+-k Create or update a KRL file
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 000000000000000000000
+\noindent
+
+\size footnotesize
+-f The KRL file
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 000000000000000000000
+
+\size footnotesize
+-u Update/merge the KRL
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 000000000000000000000
+
+\size footnotesize
+-s
+\begin_inset space ~
+\end_inset
+
+ca_public This is the CA public key.
+ We created two CA some time ago.
+ In our case:
+\begin_inset Newline newline
+\end_inset
+
+sshca-ca:/home/ca/user-sshca/2018-12-07-user-sshca-key.pub
+\begin_inset Newline newline
+\end_inset
+
+sshca-ca:/home/ca/host-sshca/2018-12-07-host-sshca-key.pub
+\begin_inset Newline newline
+\end_inset
+
+Some more investigations has to be done with this parameter.
+\begin_inset Newline newline
+\end_inset
+
+We can use whatever key we want, private, public.
+ ssh-keygen try to revoke the key.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 000000000000000000000
+\noindent
+
+\size footnotesize
+-z
+\begin_inset space ~
+\end_inset
+
+version_number Add the signal number to the KRL
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Let's revoke all the keys from user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+\noindent
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ ssh-keygen -k -f RevokedKeys /home/ca/users/ann/*.pub
+ /home/ca/users/john/*pub
+\end_layout
+
+\begin_layout LyX-Code
+\noindent
+
+\size footnotesize
+Revoking from /home/ca/users/ann/2019_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+\noindent
+
+\size footnotesize
+Revoking from /home/ca/users/ann/2019_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+\noindent
+
+\size footnotesize
+Revoking from /home/ca/users/john/2018_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+\noindent
+
+\size footnotesize
+Revoking from /home/ca/users/john/2018_id_rsa.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ ls
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+RevokedKeys
+\end_layout
+
+\begin_layout Standard
+Now, we need to copy the 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ binary file to the postgresql server into the folder 
+\begin_inset Quotes eld
+\end_inset
+
+/etc/ssh/ca
+\begin_inset Quotes erd
+\end_inset
+
+.
+ I copy this file through my real laptop with has the name 
+\begin_inset Quotes eld
+\end_inset
+
+gerrit_laptop
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ cp RevokedKeys /tmp
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+gerrit_laptop:Downloads $ scp -P 2501 captain@localhost:/tmp/RevokedKeys
+ .
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+captain@localhost's password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+RevokedKeys                                                            
+                                                                       
+                                                        100%  409   639.1KB/s
+   00:00
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+gerrit_laptop:Downloads $ scp -P 2502 RevokedKeys captain@localhost:/tmp
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+captain@localhost's password:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+RevokedKeys
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# mv /tmp/RevokedKeys .
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+postgresql-root:/etc/ssh/ca# chown root RevokedKeys
+\end_layout
+
+\begin_layout Standard
+Both the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ can not login.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-ann:/home/ann$ ssh postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+no such identity: /home/ann/.ssh/id_xmss: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ann@postgresql's password
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+mylaptop-john:/home/john$ ssh postgresql
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+no such identity: /home/john/.ssh/id_xmss: No such file or directory
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+john@postgresql's password:
+\end_layout
+
+\begin_layout Standard
+How do we check if a key is revoked? With the 
+\begin_inset Quotes eld
+\end_inset
+
+ssh-keygen -Qf 
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ ssh-keygen -Qf RevokedKeys ../users/john/*pub ../users/acc
+ountant/*pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/john/2018_id_rsa-cert.pub (john@mylaptop.yerrysherry.be): REVOKED
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/john/2018_id_rsa.pub (john@mylaptop.yerrysherry.be): REVOKED
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/accountant/2019_id_rsa-cert.pub (accountant@mylaptop.yerrysherry.be):
+ ok
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/accountant/2019_id_rsa.pub (accountant@mylaptop.yerrysherry.be): ok
+\end_layout
+
+\begin_layout Standard
+How do we check all users and hosts?
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ ssh-keygen -Qf RevokedKeys ../hosts/*/*pub ../users/*/*pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+...
+\end_layout
+
+\begin_layout Standard
+The first time we create the KRL.
+ The next time use the 
+\begin_inset Quotes eld
+\end_inset
+
+-u
+\begin_inset Quotes erd
+\end_inset
+
+ option the append/merge the KRL file.
+ For the user 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+\noindent
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ ssh-keygen -ku -f RevokedKeys  /home/ca/users/accounta
+nt/*.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Revoking from /home/ca/users/accountant/2019_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Revoking from /home/ca/users/accountant/2019_id_rsa.pub
+\end_layout
+
+\begin_layout Standard
+An other possibility is creating a file.
+ In this file we specify which keys we want to revoke.
+ We can use different kind of keywords like serial, id, key, sha1, sha256,
+ hash.
+ Check the documentation, we need OpenSSH version 7.9 for using sha256 or
+ hash keyword.
+ Then we specify some information how we want to revoke this key.
+ Let's have an example.
+ We create the file 
+\begin_inset Quotes eld
+\end_inset
+
+ids-to-revoke
+\begin_inset Quotes erd
+\end_inset
+
+ but first let's check again the certificate of user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ ssh-keygen -Lf 2019_id_rsa-cert.pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+2019_id_rsa-cert.pub:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Type: ssh-rsa-cert-v01@openssh.com user certificate
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Public key: RSA-CERT SHA256:sikW0Xz8sRhKoz1c3K/HGCxHkkw42+SEhGm9pzav5u8
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Signing CA: RSA SHA256:G5vkBB/19wMN9D8zO9n0vaxXCwQwgfedadAr9DpQ9Lw
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Key ID: "ann"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Serial: 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Valid: from 2018-12-10T18:19:22 to 2019-12-16T18:19:22
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Principals:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                root
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Critical Options: (none)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+        Extensions:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-X11-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-agent-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-port-forwarding
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-pty
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+                permit-user-rc
+\end_layout
+
+\begin_layout Standard
+Now, it becomes clear which information we can use.
+ For 
+\begin_inset Quotes eld
+\end_inset
+
+id:
+\begin_inset Quotes erd
+\end_inset
+
+, we use the 
+\begin_inset Quotes eld
+\end_inset
+
+Key ID
+\begin_inset Quotes erd
+\end_inset
+
+ of the certificate.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+key:
+\begin_inset Quotes erd
+\end_inset
+
+ is the CA certificate of the user 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ vi ids-to-revoke
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+id: ann
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+id: accountant
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+key: ssh-rsa-cert-v01@openssh.com AAAAHHNzaC1yc2EtY2....
+\end_layout
+
+\begin_layout Standard
+Now, we create a new KRL.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ ssh-keygen -k -f RevokedKeys -s /home/ca/user-sshca/20
+18-12-07-user-sshca-key ids-to-revoke
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+Revoking from ids-to-revoke
+\end_layout
+
+\begin_layout Standard
+Let's check what we revoke.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ ssh-keygen -Qf RevokedKeys   ../users/*/*pub
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/accountant/2019_id_rsa-cert.pub (accountant@mylaptop.yerrysherry.be):
+ REVOKED
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/accountant/2019_id_rsa.pub (accountant@mylaptop.yerrysherry.be): ok
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/ann/2019_id_rsa-cert.pub (ann@mylaptop.yerrysherry.be): REVOKED
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/ann/2019_id_rsa.pub (ann@mylaptop.yerrysherry.be): ok
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/john/2018_id_rsa-cert.pub (john@mylaptop.yerrysherry.be): REVOKED
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+../users/john/2018_id_rsa.pub (john@mylaptop.yerrysherry.be): REVOKED
+\end_layout
+
+\begin_layout Standard
+Now, we copy the 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ file to the postgresql server.
+ Most users keys are revoked.
+ Not all.
+ But the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+john
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+accountant
+\begin_inset Quotes erd
+\end_inset
+
+ can not login.
+ 
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+Serial Number
+\end_layout
+
+\begin_layout Standard
+We create the user 
+\begin_inset Quotes eld
+\end_inset
+
+ann
+\begin_inset Quotes erd
+\end_inset
+
+ certificate with the following command and without a serial number.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-keygen -s /home/ca/user-sshca/2018-12-07-user-sshca-key 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -I "ann" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -n "ann,root" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -V -1w:+52w 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           /home/ca/users/ann/2019_id_rsa.pub
+\end_layout
+
+\begin_layout Standard
+It is possible to give a serial number to the certificate.
+ It is not a good idea to give number + 1.
+ Better is to create a random number, like:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+$ echo 'ann' | cksum | cut -f 1 -d ' '
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+3476301178
+\end_layout
+
+\begin_layout Standard
+Find an other way if the number is not big enough.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/users/ann$ 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ssh-keygen -s /home/ca/user-sshca/2018-12-07-user-sshca-key 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -z 3476301178 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -I "ann" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -n "ann,root" 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           -V -1w:+52w 
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+           /home/ca/users/ann/2019_id_rsa.pub
+\end_layout
+
+\begin_layout Standard
+Now, it is easier to revoke this certificate.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+sshca-ca:/home/ca/revoke$ vi ids-to-revoke
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+serial: 3476301178
+\end_layout
+
+\begin_layout Standard
+Pitty, we only can use one 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ option in the sshd_config file.
+ Otherwise we could use, for example one for dba, an other for finace.
+ An other problem is when KRL files are spread out on our servers, it is
+ difficult to list which keys are revoke.
+ Keep the KRL as small as possible and make sure you have the latest text
+ file for making the KRL.
+ This is also a reason for making sign keys not to far in the future and
+ update them regular.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+Revoking hosts keys
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Quotes eld
+\end_inset
+
+RevokedKeys
+\begin_inset Quotes erd
+\end_inset
+
+ option only works for users.
+ In sshd_config, we can't revoke hosts keys.
+ Therefore we need to find a solution outside ssh.
+ We have 2 options for blocking incomming ip adresses from other hosts.
+ A firewall and TCP wrappers.
+ The former we find in all unix OS but the later it depends.
+ In OpenBSD we don't have TCP wrappers anymore but in FreeBSD, NetBSD we
+ have.
+ So, check your OS for implementing blocking ip addresses.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Disable authorized_keys
+\end_layout
+
+\begin_layout Standard
+If all your users authenticate with a CA then there is no need to use the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+authorized_keys
+\begin_inset Quotes erd
+\end_inset
+
+ file anymore.
+ Change the 
+\begin_inset Quotes eld
+\end_inset
+
+AuthorizedKeysFile
+\begin_inset Quotes erd
+\end_inset
+
+ setting to 
+\begin_inset Quotes eld
+\end_inset
+
+none
+\begin_inset Quotes erd
+\end_inset
+
+ in the 
+\begin_inset Quotes eld
+\end_inset
+
+sshd_config
+\begin_inset Quotes erd
+\end_inset
+
+ file and restart the sshd deamon.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Conclusion
+\end_layout
+
+\begin_layout Standard
+This is a long story for setting and up a Certificate Authorities (CA).
+ You should have enough information for setting it up in prodcution.
+ Of course it would be crazy to set it up by hand.
+ You need some kind of configuration management tool.
+ There are many of them.
+ Choose the one you most like, Ansible, Puppet are the best know.
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Resources
+\end_layout
+
+\begin_layout Standard
+https://code.fb.com/production-engineering/scalable-and-secure-access-with-ssh/
+\end_layout
+
+\begin_layout Standard
+https://www.youtube.com/watch?v=exjorJyddok
+\end_layout
+
+\begin_layout Standard
+https://ef.gy/hardening-ssh
+\end_layout
+
+\begin_layout Standard
+https://www.digitalocean.com/community/tutorials/how-to-create-an-ssh-ca-to-valida
+te-hosts-and-clients-with-ubuntu
+\end_layout
+
+\begin_layout Standard
+https://blog.habets.se/2011/07/OpenSSH-certificates.html
+\end_layout
+
+\begin_layout Standard
+https://framkant.org/2016/10/setting-up-a-ssh-certificate-authority-ca/
+\end_layout
+
+\begin_layout Standard
+https://framkant.org/2017/07/scalable-access-control-using-openssh-certificates/
+\end_layout
+
+\begin_layout Standard
+https://serverfault.com/questions/894507/how-to-give-temporary-access-with-ssh-us
+ing-certificate-authority
+\end_layout
+
+\begin_layout Standard
+https://www.lorier.net/docs/ssh-ca.html 
+\end_layout
+
+\begin_layout Standard
+http://unixseclab.com/index.php/2017/01/09/ssh-start-to-finish-certificate-authori
+ty-basics/
+\end_layout
+
+\begin_layout Standard
+http://unixseclab.com/index.php/2017/01/16/ssh-start-to-finish-architecture-standi
+ng-up-the-ca/
+\end_layout
+
+\begin_layout Standard
+http://unixseclab.com/index.php/2017/01/23/ssh-start-to-finish-architecture-standi
+ng-up-the-ca-pt-2/
+\end_layout
+
+\begin_layout Standard
+https://docs.fedoraproject.org/en-US/fedora/f28/system-administrators-guide/infras
+tructure-services/OpenSSH/
+\end_layout
+
+\begin_layout Standard
+https://medium.com/leboncoin-engineering-blog/cassh-ssh-key-signing-tool-39fd3b8e
+4de7
+\end_layout
+
+\begin_layout Standard
+https://github.com/vedetta-com/vedetta/blob/master/src/usr/local/share/doc/vedett
+a/OpenSSH_Principals.md
+\end_layout
+
+\begin_layout Standard
+https://utcc.utoronto.ca/~cks/space/blog/sysadmin/SSHBroadKeyRevocation
+\end_layout
+
+\begin_layout Standard
+https://www.lorier.net/docs/ssh-ca.html
+\end_layout
+
+\begin_layout Standard
+https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Public_Key_Authentication#Mark_Publ
+ic_Keys_as_Revoked
+\end_layout
+
+\begin_layout Standard
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/depl
+oyment_guide/sec-revoking_an_ssh_ca_certificate
+\end_layout
+
+\begin_layout Standard
+https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.foto100/krl.
+html
+\end_layout
+
+\begin_layout Standard
+https://docs.fedoraproject.org/en-US/Fedora/23/html/System_Administrators_Guide/se
+c-Revoking_an_SSH_CA_Certificate.html
+\end_layout
+
+\begin_layout Standard
+https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Public_Key_Authentication#Mark_Publ
+ic_Keys_as_Revoked
+\end_layout
+
+\end_body
+\end_document
