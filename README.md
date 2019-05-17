@@ -6,7 +6,12 @@ Installing software is a hard task. Suppose, you want to install a web server. W
 
 The documentation is written with Lyx and the licence is of course "the BSD license".
 
-Version v0.0.1
+# Installation
+git clone https://github.com/yerrysherry/freebsd-I-dont-know.git
+cd freebsd-I-dont-know
+open FreeBsd.pdf
+
+# Version v0.0.1
 
 There are still a lot of mistakes (language errors). But I think it is usable.
 
