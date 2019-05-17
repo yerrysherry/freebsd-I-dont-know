@@ -8,7 +8,9 @@ The documentation is written with Lyx and the licence is of course "the BSD lice
 
 # Installation
 git clone https://github.com/yerrysherry/freebsd-I-dont-know.git
+
 cd freebsd-I-dont-know
+
 open FreeBsd.pdf
 
 # Version v0.0.1
