@@ -13,6 +13,12 @@ cd freebsd-I-dont-know
 
 open FreeBsd.pdf
 
+# Version v0.2
+
+03/08/2021
+
+This is a cleanup version. Check typos and sentences.
+
 # Version v0.0.1
 
 There are still a lot of mistakes (language errors). But I think it is usable.

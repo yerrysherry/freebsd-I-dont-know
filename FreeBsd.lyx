@@ -100,7 +100,7 @@ FreeBSD, I don't know
 \begin_inset Newline newline
 \end_inset
 
-Version 0.1
+Version 0.2
 \end_layout
 
 \begin_layout Author
@@ -127,22 +127,22 @@ Who am I and why?
 \begin_layout Standard
 I started my sysadmin unix career in 1998 with the Flemish Government.
  The operation system we were using was Solaris 2.6.
- During those days, nearly for each new application we bought a physical
- server, mostly a Sun Ultra 450 Enterprise.
+ In those days, for each new application we bought a physical server, mostly
+ a Sun Ultra 450 Enterprise.
  A lot of them had a tape device for doing backups.
- For monitor those servers and deamons we used Big Brother.
+ To monitor those servers and deamons we used Big Brother.
  In our main department we had a NIS+ system.
  But most of our time we did basic sysadmin, creating users, installing
  printer queus, updating DHCP configuration, NFS, restarting deamons, checking
  logs, rotate them, backup, restore and sent mails to people to please cleaup
  up their home folders.
- There was no ticket system, we used only mail and hanging hours at the
- telephone.
+ There was no ticket system, we used only mail and hang on the telephone
+ for hours.
 \end_layout
 
 \begin_layout Standard
-We first used a terminal server.
- Later a few of my colleguas switched to Linux.
+First, we used a terminal server.
+ Later a few of my collegues switched to Linux.
  I tried using FreeBSD for a few weeks, a lot of time went into compiling,
  especially KDE took a few hours.
  FreeBSD was very stable but a few programs were not available, switching
@@ -153,13 +153,13 @@ We first used a terminal server.
 Nowadays, in 2019, everybody in our team use a laptop.
  Most of them use Mac Os or Fedora.
  At the server side everything changed.
- Physical servers transformed into virtual servers and those servers running
- in a Cloud environment.
+ Physical servers transformed into virtual servers and those servers are
+ running in a Cloud environment.
  Solaris OS changed to Ubuntu and CentOs.
 \end_layout
 
 \begin_layout Standard
-In Apil 2018, I was at very small conference (LOADays) in Belgium and one
+In April 2018, I was at very small conference (LOADays) in Belgium and one
  of those talks, 
 \begin_inset Quotes eld
 \end_inset
@@ -170,7 +170,7 @@ FreeBSD is not a Linux distro
 
  by Kristof Provost, changed my mind.
  I really appreciated his talk and started looking back to FreeBSD.
- Some time later, I bought a few books from Michael W Lucas, watch 
+ Some time later, I bought a few books from Michael W Lucas, watched 
 \begin_inset Quotes eld
 \end_inset
 
@@ -178,17 +178,17 @@ BSD Now
 \begin_inset Quotes erd
 \end_inset
 
- podcasts and reading other BSD documentation from the internet.
+ podcasts and read other BSD documentation from the internet.
  Now, I have extra fun with the BSD family.
 \end_layout
 
 \begin_layout Standard
-When starting a knew project, like installing a webserver.
+When starting a new project, like installing a webserver.
  First we need to collect information by reading, filtering and then transformin
 g the input into a computer-like format: config files, wiki, ....
  All those steps take a lot of time and effort.
  Maybe at the end of the story, the setup is not always going into production
- but it would be pitty to drop it into a trashcan.
+ but it would be pity to drop it into a trashcan.
  
 \end_layout
 
@@ -250,7 +250,7 @@ Information is constantly changing.
 \end_layout
 
 \begin_layout Itemize
-No read this book top down.
+Dnn't read this book top down.
  Pick the chapters you like.
  
 \end_layout
@@ -269,15 +269,15 @@ Installing BSD
 \begin_layout Standard
 If you start a project and need multiple servers, then you should have a
  virtual environment like VirtualBox.
- Normally, it is not to difficult to install a BSD operation system.
- Which one to choose depends on your use case and your personal choose,
+ Normally, it is not too difficult to install a BSD operation system.
+ Which one to choose depends on your use case and your personal choise,
  FreeBSD, OpenBSD, NetBSD, HardenedBSD, ...
  Here we discuss OpenBSD.
 \end_layout
 
 \begin_layout Standard
 First make a configuration in VirtualBox.
- The most importent thing is to use 2 network interfaces.
+ The most important thing is to use 2 network interfaces.
 \end_layout
 
 \begin_layout Itemize
@@ -416,7 +416,7 @@ ip a
  DHCP is the easiest but for servers we do manual setting.
  Prefer the option you like.
  Once a server is setup with DHCP, it will always get the same ip adres.
- Here we use manual because I want to choose mu ip addresses.
+ Here we use manual because I want to choose my ip addresses.
 \end_layout
 
 \begin_layout Standard
@@ -644,8 +644,9 @@ Instaling OpenBSD in VirtualBox.
 \begin_layout Standard
 Now, the fun part begins.
  It is not that difficult to answer the questions.
- The first interface (em0), which is the NAT interface, we use DHCP.
- The second network interface (em1), we install when the server is booted.
+ On the first interface (em0), which is the NAT interface, we will use DHCP.
+ The second network interface (em1), we will install when the server is
+ booted.
  We don't need an X system.
 \end_layout
 
@@ -804,8 +805,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-Go back to the settings of the virtial server and remove the disk from the
- virtual server.
+Go back to the settings of the virtual server and remove the install disk
+ from the virtual server.
  Otherwise the install proces restarts again.
 \end_layout
 
@@ -858,8 +859,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-On the NAT interface we do port forwarding.
- This makes it easy to login for you host server (laptop).
+On the NAT interface we will do port forwarding.
+ This makes it easy to login for your host server (laptop).
  This can also be done when the virtual server is running.
 \end_layout
 
@@ -917,8 +918,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-Start de virtual server.
- A few seconds, you are welcome by a login prompt.
+Start the virtual server.
+ A few seconds later, you are welcomed by a login prompt.
  
 \end_layout
 
@@ -1214,7 +1215,7 @@ packer
 
 .
  Another way is to clone the virtuel server.
- In VirtualBox, select the virtual server who you want to clone.
+ In VirtualBox, select the virtual server which you want to clone.
  
 \end_layout
 
@@ -1463,7 +1464,7 @@ There was a very interesting blog written by Marlon Dutrafrom from Facebook
 \end_layout
 
 \begin_layout Itemize
-They have a lot of servers and want to registrate who can log in.
+They have a lot of servers and want to control who can log in.
 \end_layout
 
 \begin_layout Itemize
@@ -1695,8 +1696,8 @@ take +
 
  icon and name your snapshot.
  When we have problems you can restore from a snapshot.
- Very important is that your clock is acurate!! Do not let it drift, especialy
- in virtual environments like VirtualBox.
+ It is very important that your clock is acurate!! Do not let it drift,
+ especialy in virtual environments like VirtualBox.
 \end_layout
 
 \begin_layout Section
@@ -2349,13 +2350,13 @@ yes
 \end_inset
 
  file.
- The next time john logsin, he is no longer disturbe to answer the question.
- Client and server truss each other.
+ The next time john logs in, he is no longer challenged to answer the question.
+ Client and server trust each other.
  This process is called host-based authentication.
 \end_layout
 
 \begin_layout Standard
-Most of the time it is fine when working internal and you know your servers.
+Most of the time it is fine when working internally and you know your servers.
  Are you still confident when you log into a server you don't know? How
  do we know that this server is ok? Maybe DNS is pointing to a bad server?
  You can call to the sysadmin and ask if this is the right public key.
@@ -2364,7 +2365,7 @@ Most of the time it is fine when working internal and you know your servers.
 \end_layout
 
 \begin_layout Standard
-There is an other way of getting all the public keys from a server.
+There is another way of getting all the public keys from a server.
 \end_layout
 
 \begin_layout LyX-Code
@@ -2599,7 +2600,7 @@ Using a CA with SSH
 When we have a lot of servers and people like sysadmins, database admins,
  web admins, ....
  it is very difficult to maintain.
- It is impossible to put all our users local in the 
+ It is impossible to put all our users locally in the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2610,7 +2611,7 @@ When we have a lot of servers and people like sysadmins, database admins,
  file.
  That's why for regular users we put them in LDAP, Kerberos or an other
  system.
- But because such systems are a single point of failure and we want still
+ But because such systems are a single point of failure and we still want
  to maintain our servers, we can create a few local users and then 
 \begin_inset Quotes eld
 \end_inset
@@ -2648,12 +2649,12 @@ known_hosts
  file.
  If we want to login without a password, we need to distribute our public
  keys to other servers.
- Is it possible to get rid off? 
+ Is it possible to get rid of this? 
 \end_layout
 
 \begin_layout Standard
 We need a third party which we can trust, an OpenSSH Certificate Authority.
- When setting up a CA server, we could consider to login as 
+ When setting up a CA server, we could consider to login as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2712,16 +2713,16 @@ Signing certificates can be done by a local user.
 
 \begin_layout Itemize
 Why not install 2 CA servers.
- One for signing Host public keys and an other for User public keys.
+ One for signing Host public keys and another for User public keys.
 \end_layout
 
 \begin_layout Itemize
 A good starting point is setting the expiration date no longer than 1 year
  in the future.
- Do not wait a few days before resign the keys.
+ Do not wait a few days before resigning the keys.
  In one year a lot of things could change, news bugs in OpenSsh, better
  encryption tools, ...
- that's way we do not set the expiration to long in the future.
+ that's why we do not set the expiration too long in the future.
 \end_layout
 
 \begin_layout Itemize
@@ -2732,7 +2733,7 @@ Use a good passphrase when generating keys.
 Use a provision tool like Puppet, Ansible, Chef, ...
  to automade the whole process.
  This is really a must when regenerating, revoking keys.
- In a cloud environment we reinstall most of the time servers instead of
+ In a cloud environment we reinstall servers most of the time instead of
  updating them.
 \end_layout
 
@@ -2821,8 +2822,8 @@ sshca-ca:/home/ca/user-sshca$ ssh-keygen -t rsa -f 2018-12-07-user-sshca-key
 \end_layout
 
 \begin_layout Standard
-First we add the user and update the login prompt, so we have a nicer way
- who and where we are log into the folder structure.
+First we add the user and update the shell prompt, so we have a nicer view
+ of who is logged in and where we are in the folder structure.
  Then, we create 4 folders.
  We generate keys in the 
 \begin_inset Quotes eld
@@ -2860,7 +2861,7 @@ Host Certificate Authority
 \begin_layout Standard
 The host certificate authenticates hosts to users.
  All our servers host keys are signed with the CA.
- When a client connects to a server, the user won't be borrowed to trust
+ When a client connects to a server, the user won't be bothered about trusting
  the key.
  No need to type 
 \begin_inset Quotes eld
@@ -2874,7 +2875,7 @@ yes
 \begin_inset Quotes eld
 \end_inset
 
-know_hosts
+known_hosts
 \begin_inset Quotes erd
 \end_inset
 
@@ -2931,8 +2932,8 @@ After installing the server, copy the public keys in the folder
  There are better ways for getting those public keys.
  OpenSSH has 4 types of public keys.
  DSA keys are not safe anymore, use RSA or ed25519.
- The latest is more secure then RSA but older environments may not support
- them.
+ The latter is more secure then RSA but older environments may not support
+ it.
  
 \end_layout
 
@@ -2968,7 +2969,7 @@ HostCertificate
 \begin_inset Quotes erd
 \end_inset
 
- exits in the file 
+ exists in the file 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4495,7 +4496,7 @@ Dec 17 03:57:29 Postgresql Sshd[31896]: Disconnected From User John 192.168.153.
 \begin_layout Section
 
 \size normal
-Logging is as root
+Logging in as root
 \end_layout
 
 \begin_layout Standard
@@ -4548,7 +4549,7 @@ root
 \end_inset
 
 .
- Those steps are done in a control way.
+ Those steps are done in a controlled way.
  Let's see a few ways how this could be done.
 \end_layout
 
@@ -4986,7 +4987,7 @@ ann
 \begin_inset Quotes erd
 \end_inset
 
- needs an account on this server and most importent people need to have
+ needs an account on this server and most importantly people need to have
  the possibility to login as root.
  OpenBsd is very strict when logging in as root, it prohibits it completely.
 \end_layout
@@ -5107,7 +5108,7 @@ ann
 \begin_inset Quotes erd
 \end_inset
 
- logins with her account and a little bit latter she logins as 
+ logins with her account and a little bit later she logins as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5136,7 +5137,7 @@ name "subsec:With-AuthorizedPrincipalsFile"
 In the last section, we add users to the principal argument in the user
  certificate.
  This is ok when we have a few users who need to login as a specific user.
- But it gets very quick cumbersome and it don't scale very well.
+ But it gets cumbersome very quickly and it doesn't scale very well.
  Everytime a user needs to login as an other user, we need to change the
  user certificate.
  A better solution is to use the 
@@ -5148,7 +5149,7 @@ AuthorizedPrincipalsFile
 \end_inset
 
  sshd option.
- We can do it globaly or on user base.
+ We can do it globaly or on a user basis.
  
 \end_layout
 
@@ -6305,7 +6306,7 @@ The shell script can be extended, a few ideas:
 
 \begin_layout Itemize
 write information to a log file.
- I have no clue but the log statements show duplicated in the log file.
+ I have no clue why but the log statements show duplicates in the log file.
 \end_layout
 
 \begin_layout Itemize
@@ -6374,7 +6375,7 @@ john
 
  have all the privileges when logging in.
  In most cases it's ok.
- But sometimes we want fine tune those privileges.
+ But sometimes we want to fine tune those privileges.
  In fact in all above cases, without knowing, we were creating an 
 \begin_inset Quotes eld
 \end_inset
@@ -7453,11 +7454,11 @@ sshd_config
 \begin_inset Quotes eld
 \end_inset
 
-postgreslq
+postgresql
 \begin_inset Quotes erd
 \end_inset
 
- server for enable this option.
+ server to enable this option.
  Restart the daemon.
 \end_layout
 
@@ -7569,7 +7570,7 @@ salary.sh
 \begin_inset Quotes erd
 \end_inset
 
- account can be execute.
+ script can be executed.
 \end_layout
 
 \begin_layout LyX-Code
@@ -7611,7 +7612,7 @@ auth_principals.sh
 \begin_inset Quotes erd
 \end_inset
 
- script for printing the options.
+ script to print the options.
  ($1 ~ user {print $3 " " $2; count=1})
 \end_layout
 
@@ -7744,9 +7745,9 @@ Revoking keys
 \begin_layout Standard
 We did a long story, with all kind of possibilities for creating users with
  principals.
- But what happen when people leave the organisation, when somebody laptop
- is stolen or a host server we won't trust anymore.
- There are multiple ways for revoking users and hosts keys.
+ But what happens when people leave the organisation, when somebody's laptop
+ is stolen or we stop trusting the host.
+ There are multiple ways for revoking user and host keys.
  
 \end_layout
 
@@ -9030,7 +9031,7 @@ serial: 3476301178
 \end_layout
 
 \begin_layout Standard
-Pitty, we only can use one 
+Pity, we only can use one 
 \begin_inset Quotes eld
 \end_inset
 
@@ -9039,13 +9040,13 @@ RevokedKeys
 \end_inset
 
  option in the sshd_config file.
- Otherwise we could use, for example one for dba, an other for finace.
- An other problem is when KRL files are spread out on our servers, it is
+ Otherwise we could use, for example one for dba, another for finance.
+ Another problem is when KRL files are spread out on our servers, it is
  difficult to list which keys are revoke.
  Keep the KRL as small as possible and make sure you have the latest text
  file for making the KRL.
- This is also a reason for making sign keys not to far in the future and
- update them regular.
+ This is also a reason for not signing keys too far into the future and
+ regularly updating them.
 \end_layout
 
 \begin_layout Subsection
@@ -9066,11 +9067,11 @@ RevokedKeys
  option only works for users.
  In sshd_config, we can't revoke hosts keys.
  Therefore we need to find a solution outside ssh.
- We have 2 options for blocking incomming ip adresses from other hosts.
+ We have 2 options for blocking incoming ip adresses from other hosts.
  A firewall and TCP wrappers.
- The former we find in all unix OS but the later it depends.
+ The former we find in all unix OS but the latter it depends.
  In OpenBSD we don't have TCP wrappers anymore but in FreeBSD, NetBSD we
- have.
+ still do.
  So, check your OS for implementing blocking ip addresses.
 \end_layout
 
@@ -9126,12 +9127,12 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This is a long story for setting and up a Certificate Authorities (CA).
+This is a long story for setting up a Certificate Authority (CA).
  You should have enough information for setting it up in prodcution.
  Of course it would be crazy to set it up by hand.
  You need some kind of configuration management tool.
  There are many of them.
- Choose the one you most like, Ansible, Puppet are the best know.
+ Choose the one you most like, Ansible, Puppet are the best I know.
 \end_layout
 
 \begin_layout Section
@@ -9239,6 +9240,119 @@ c-Revoking_an_SSH_CA_Certificate.html
 \begin_layout Standard
 https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Public_Key_Authentication#Mark_Publ
 ic_Keys_as_Revoked
+\end_layout
+
+\begin_layout Chapter
+
+\size normal
+PostgreSql
+\end_layout
+
+\begin_layout Standard
+checkpoint -> true in volgend backup
+\end_layout
+
+\begin_layout Standard
+pg_start_backup('my_backup',true)
+\end_layout
+
+\begin_layout Standard
+start backup
+\end_layout
+
+\begin_layout Standard
+pg_stop_backup()
+\end_layout
+
+\begin_layout Standard
+alter system set full_page_write=off;
+\end_layout
+
+\begin_layout Standard
+zfs set compression=lz4 rpool
+\end_layout
+
+\begin_layout Standard
+zfs set atime=off
+\end_layout
+
+\begin_layout Standard
+zfs set recordsize=16K, door compressie
+\end_layout
+
+\begin_layout Standard
+zfs set primarycache=metadata/all
+\end_layout
+
+\begin_layout Standard
+zfs send -v -L -p -e pool | zfs receibe -v pool
+\end_layout
+
+\begin_layout Standard
+zfs get receive_resume_token
+\end_layout
+
+\begin_layout Standard
+zfs snapshot pool
+\end_layout
+
+\begin_layout Standard
+zfs send -v -L -p -e -i pool snapshot | zfs receive -v pool
+\end_layout
+
+\begin_layout Standard
+zfs set logbias=troughput, txg 1 second
+\end_layout
+
+\begin_layout Standard
+cat /sys/module/zfs/parameters/zfs_txg_timeout
+\end_layout
+
+\begin_layout Standard
+echo 1 > /sys/module/zfs/parameters/zfs_txg_timeout
+\end_layout
+
+\begin_layout Standard
+echo 'options zfs zfs_txg_timeout=1' >> /etc/..
+\end_layout
+
+\begin_layout Standard
+alter system set synchronous_commit=off
+\end_layout
+
+\begin_layout Standard
+zfs set logbias=throughput
+\end_layout
+
+\begin_layout Standard
+https://jrs-s.net
+\end_layout
+
+\begin_layout Chapter
+
+\size normal
+zfs snaphost
+\end_layout
+
+\begin_layout Standard
+Als je een snapshot verwijdert maak een bookmark.
+ bsd now 272, 214
+\end_layout
+
+\begin_layout Standard
+https://github.com/yboetz/pyznap
+\end_layout
+
+\begin_layout Standard
+https://github.com/jimsalterjrs/sanoid
+\end_layout
+
+\begin_layout Standard
+https://github.com/zfsonlinux/zfs-auto-snapshot
+\end_layout
+
+\begin_layout Standard
+https://github.com/ewwhite/zfs-ha/wiki
 \end_layout
 
 \end_body
